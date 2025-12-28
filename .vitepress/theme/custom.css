@@ -537,6 +537,10 @@ table th a[href]:is([href*='./'], :has-text('Open'), :has-text('View')):hover {
 	.VPNavBarMenu {
 		display: none !important;
 	}
+	/* Allow the mobile menu overlay to appear up to this width */
+	.VPNavScreen {
+		display: block !important;
+	}
 	/* Reset logo for mobile view */
 	.VPNavBar .VPImage.logo {
 		transform: scale(1.5);
@@ -556,6 +560,10 @@ table th a[href]:is([href*='./'], :has-text('Open'), :has-text('View')):hover {
 	}
 	.VPNavBar.has-sidebar .VPNavBarMenu {
 		display: none !important;
+	}
+	/* Allow the mobile menu overlay to appear up to this width */
+	.VPNavScreen {
+		display: block !important;
 	}
 	/* Reset logo for sidebar pages in this range */
 	.VPNavBar.has-sidebar .VPImage.logo {
