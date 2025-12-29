@@ -529,3 +529,49 @@ table th a[href]:is([href*='./'], :has-text('Open'), :has-text('View')):hover {
 .VPNavBar .VPNavBarTitle {
 	margin-right: 85px; /* adjust value (px) to increase/decrease distance */
 }
+
+@media (max-width: 1150px) {
+	.VPNavBarHamburger {
+		display: flex !important;
+	}
+	.VPNavBarMenu {
+		display: none !important;
+	}
+	/* Allow the mobile menu overlay to appear up to this width */
+	.VPNavScreen {
+		display: block !important;
+	}
+	/* Reset logo for mobile view */
+	.VPNavBar .VPImage.logo {
+		transform: scale(1.5);
+		transform-origin: left center;
+	}
+	.VPNavBar .VPNavBarTitle {
+		margin-right: 0;
+	}
+}
+
+/* Special case: Pages with Sidebar (like DSA) need to switch to mobile menu earlier 
+   because the sidebar takes up space.
+*/
+@media (max-width: 1350px) {
+	.VPNavBar.has-sidebar .VPNavBarHamburger {
+		display: flex !important;
+	}
+	.VPNavBar.has-sidebar .VPNavBarMenu {
+		display: none !important;
+	}
+	/* Allow the mobile menu overlay to appear up to this width */
+	.VPNavScreen {
+		display: block !important;
+	}
+	/* Reset logo for sidebar pages in this range */
+	.VPNavBar.has-sidebar .VPImage.logo {
+		transform: scale(1.5);
+		transform-origin: left center;
+	}
+	.VPNavBar.has-sidebar .VPNavBarTitle {
+		margin-right: 0;
+	}
+}
+
