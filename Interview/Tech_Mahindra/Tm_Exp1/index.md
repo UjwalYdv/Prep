@@ -123,7 +123,7 @@ The interview process tested **basics, consistency, and communication**, rather 
 - Practice **coding basics regularly**.
 - Do not ignore **aptitude and verbal rounds**.
 - Be very clear about your **projects and fundamentals**.
-- Stay calm — many questions are simple but test **clarity of thought**.
+- Stay calm, many questions are simple but test **clarity of thought**.
 
 ---
 

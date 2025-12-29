@@ -17,7 +17,7 @@ The first round was an **Online Assessment (OA)** consisting of **1 coding quest
 - Once parsing was done correctly, the logic was manageable
 
 🧠 *Tip:* This round focused more on **string manipulation and input handling** rather than algorithmic difficulty.  
-Reference: [Regular Expressions – GeeksforGeeks](https://www.geeksforgeeks.org/regular-expression-python-examples/)
+Reference: [Regular Expressions – GeeksforGeeks](https://www.geeksforgeeks.org/cpp/regex-regular-expression-in-c/)
 
 ✅ **Outcome:** Cleared OA
 
@@ -56,7 +56,7 @@ This round involved a **simple coding problem**.
 - Maintainability over clever tricks
 
 🧠 Stripe values **production-quality code**.  
-Reference: [Clean Code Principles – GeeksforGeeks](https://www.geeksforgeeks.org/clean-code-principles/)
+Reference: [Clean Code Principles – GeeksforGeeks](https://dev.to/favourmark05/writing-clean-code-best-practices-and-principles-3amh)
 
 ✅ **Outcome:** Cleared Round 2
 
@@ -105,7 +105,7 @@ If using C++:
 References:
 - [libcurl Documentation](https://curl.se/libcurl/)
 - [REST API Introduction – GeeksforGeeks](https://www.geeksforgeeks.org/rest-api-introduction/)
-- [JSON Parsing in C++ – GeeksforGeeks](https://www.geeksforgeeks.org/json-parsing-in-c/)
+- [JSON Parsing in C++ – GeeksforGeeks](https://dev.to/uponthesky/c-making-a-simple-json-parser-from-scratch-250g)
 
 ❌ **Outcome:** Rejected in this round
 
@@ -141,9 +141,9 @@ Although the final result was **disappointing 🥲**, the experience was highly 
 
 ## 🔗 Reference Links
 - https://stripe.com/jobs
-- https://www.geeksforgeeks.org/regular-expression-python-examples/
-- https://www.geeksforgeeks.org/clean-code-principles/
+- https://www.geeksforgeeks.org/cpp/regex-regular-expression-in-c/
+- https://dev.to/favourmark05/writing-clean-code-best-practices-and-principles-3amh
 - https://google.github.io/styleguide/
 - https://www.geeksforgeeks.org/rest-api-introduction/
 - https://curl.se/libcurl/
-- https://www.geeksforgeeks.org/json-parsing-in-c/
+- https://dev.to/uponthesky/c-making-a-simple-json-parser-from-scratch-250g
