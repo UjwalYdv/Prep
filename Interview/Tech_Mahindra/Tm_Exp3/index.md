@@ -80,7 +80,7 @@ The interviewer expected a **solid understanding of technologies** and clear exp
 **References:**  
 - https://www.geeksforgeeks.org/operating-systems/  
 - https://www.geeksforgeeks.org/dbms/  
-- https://www.geeksforgeeks.org/reactjs-tutorial/  
+- https://www.geeksforgeeks.org/reactjs/react/  
 - https://www.geeksforgeeks.org/javascript-tutorial/
 
 ---
@@ -98,7 +98,7 @@ This was the **final round**, primarily behavioral.
 The round was calm, friendly, and conversational.
 
 **Reference:**  
-- https://www.indeed.com/career-advice/interviewing/hr-interview-questions
+- https://www.geeksforgeeks.org/hr/hr-interview-questions/
 
 ---
 
@@ -144,6 +144,6 @@ The interviews emphasized:
 - https://www.indiabix.com/verbal-ability/questions-and-answers/  
 - https://www.geeksforgeeks.org/operating-systems/  
 - https://www.geeksforgeeks.org/dbms/  
-- https://www.geeksforgeeks.org/reactjs-tutorial/  
+- https://www.geeksforgeeks.org/reactjs/react/  
 - https://www.geeksforgeeks.org/javascript-tutorial/  
-- https://www.indeed.com/career-advice/interviewing/hr-interview-questions  
+- https://www.geeksforgeeks.org/hr/hr-interview-questions/  

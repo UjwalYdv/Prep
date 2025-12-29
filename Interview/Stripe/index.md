@@ -1,12 +1,12 @@
 # Inside stories. Real experiences. Stripe interviews, unfiltered.
 
-## 📚 Summer/ Winter Internship
+## 📚 Winter SDE Internship
 
 <div align="center">
 
 | # | Role                             |                                            View                                            |
 |:-:|:-------------------------------------|:--------------------------------------------------------------------------------------------:|
-| 1 | **Software Engineering Intern, 6 months**                | [📥 Open](./Stripe_Exp1) |
+| 1 | **Software Engineering Intern, 6 months 2026**     | [📥 Open](./Stripe_Exp1) |
 
 
 </div>

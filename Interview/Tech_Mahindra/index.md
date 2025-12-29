@@ -1,14 +1,14 @@
 # Inside stories. Real experiences. Tech Mahindra interviews, unfiltered.
 
-## 📚 SDE
+## 📚 SDE Intern (TechnoRise Intern)
 
 <div align="center">
 
 | # | Role                             |                                            View                                            |
 |:-:|:---------------------------------|:--------------------------------------------------------------------------------------------:|
-| 1 | **Technorise Intern 2026**      | [📥 Open](./Tm_Exp1) |
-| 2 | **Technorise Intern 2026**      | [📥 Open](./Tm_Exp2) |
-| 2 | **Technorise Intern 2026**      | [📥 Open](./Tm_Exp3) |
+| 1 | **TechnoRise Intern 2025**      | [📥 Open](./Tm_Exp1) |
+| 2 | **TechnoRise Intern 2025**      | [📥 Open](./Tm_Exp2) |
+| 2 | **TechnoRise Intern 2025**      | [📥 Open](./Tm_Exp3) |
 
 </div>
 

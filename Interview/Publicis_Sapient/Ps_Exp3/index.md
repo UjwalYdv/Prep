@@ -69,7 +69,7 @@ Easy OS questions were asked, including:
 - Introductory questions from the **Deadlock** topic
 
 **References:**  
-- https://www.geeksforgeeks.org/introduction-of-operating-system/  
+- https://www.geeksforgeeks.org/operating-systems/introduction-of-operating-system-set-1/  
 - https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/
 
 ---
@@ -150,6 +150,6 @@ rather than tricky or advanced questions.
 - https://www.geeksforgeeks.org/data-structures/  
 - https://www.geeksforgeeks.org/dynamic-programming/  
 - https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/  
-- https://www.geeksforgeeks.org/introduction-of-operating-system/  
+- https://www.geeksforgeeks.org/operating-systems/introduction-of-operating-system-set-1/  
 - https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/  
 - https://www.indeed.com/career-advice/interviewing/hr-interview-questions  
