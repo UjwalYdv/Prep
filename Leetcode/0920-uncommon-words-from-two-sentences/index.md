@@ -103,7 +103,23 @@ class Solution {
 <template #cpp>
 
 ```cpp
-// Add your C++ solution here
+class Solution {
+public:
+    vector<string> uncommonFromSentences(string A, string B) {
+        unordered_map<string, int> count;
+        stringstream ss1(A), ss2(B);
+        string word;
+        while (ss1 >> word) count[word]++;
+        while (ss2 >> word) count[word]++;
+        vector<string> ans;
+        for (auto &it : count) {
+            if (it.second == 1) {
+                ans.push_back(it.first);
+            }
+        }
+        return ans;
+    }
+};
 ```
 
 </template>
