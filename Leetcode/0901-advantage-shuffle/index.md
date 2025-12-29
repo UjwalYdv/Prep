@@ -65,7 +65,31 @@ class Solution {
 <template #cpp>
 
 ```cpp
-// Add your C++ solution here
+class Solution {
+public:
+    vector<int> advantageCount(vector<int>& nums1, vector<int>& nums2) {
+        int n = nums1.size();
+        map<int,int> mpp;
+        for (int x : nums1) {
+            mpp[x]++;
+        }
+        vector<int> res;
+        for (int i = 0; i < nums2.size(); i++) {
+            int curr = nums2[i];
+            auto it = mpp.upper_bound(curr);
+            if (it == mpp.end()) {
+                it = mpp.begin();
+            }
+            res.push_back(it->first);
+            it->second--;
+            if (it->second == 0) {
+                mpp.erase(it);
+            }
+        }
+        return res;
+    }
+};
+
 ```
 
 </template>

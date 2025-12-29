@@ -107,9 +107,7 @@ private:
         int node;
         Pair(long long c, int n) : count(c), node(n) {}
     };
-
     deque<Pair> dq;
-
 public:
     RLEIterator(vector<int>& encoding) {
         int n = encoding.size();
@@ -119,7 +117,6 @@ public:
             dq.emplace_back(count, node);
         }
     }
-
     int next(int n) {
         long long req = n;
         int last = -1;
