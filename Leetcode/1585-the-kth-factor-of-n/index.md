@@ -89,7 +89,8 @@ public:
         if(k > factors.size()) return -1;
         return factors[k - 1];
     }
-};```
+};
+```
 
 </template>
 
