@@ -1,6 +1,26 @@
-<script setup>
-import { ref, nextTick } from 'vue'
+<script>
+import { ref, watch, onMounted, nextTick } from 'vue'
 
+const GLOBAL_LANG_KEY = 'java'
+const globalActiveLanguage = ref('')
+
+// initialize from localStorage if available
+if (typeof window !== 'undefined') {
+  const stored = localStorage.getItem(GLOBAL_LANG_KEY)
+  if (stored) {
+    globalActiveLanguage.value = stored
+  }
+}
+
+// Watch for changes and save to localStorage
+watch(globalActiveLanguage, (newLang) => {
+  if (typeof window !== 'undefined' && newLang) {
+    localStorage.setItem(GLOBAL_LANG_KEY, newLang)
+  }
+})
+</script>
+
+<script setup>
 const props = defineProps({
   languages: {
     type: Array,
@@ -11,6 +31,34 @@ const props = defineProps({
 const activeTab = ref(0)
 const isFullscreen = ref(false)
 const copiedIndex = ref(null)
+
+onMounted(() => {
+  if (globalActiveLanguage.value) {
+    const index = props.languages.findIndex(
+      (lang) => lang.name === globalActiveLanguage.value,
+    )
+    if (index !== -1) {
+      activeTab.value = index
+    }
+  } else if (props.languages.length > 0) {
+    // Note: If no global language is set, use the first tab's language as default
+    globalActiveLanguage.value = props.languages[0].name
+  }
+})
+
+watch(globalActiveLanguage, (newLang) => {
+  if (newLang) {
+    const index = props.languages.findIndex((lang) => lang.name === newLang)
+    if (index !== -1) {
+      activeTab.value = index
+    }
+  }
+})
+
+const setActiveTab = (index) => {
+  activeTab.value = index
+  globalActiveLanguage.value = props.languages[index].name
+}
 
 const toggleFullscreen = () => {
   isFullscreen.value = !isFullscreen.value
@@ -58,7 +106,7 @@ const langIcon = (lang) => {
         v-for="(lang, index) in languages"
         :key="index"
         :class="['tab-button', { active: activeTab === index }]"
-        @click="activeTab = index"
+        @click="setActiveTab(index)"
       >
         <span class="lang-icon">{{ langIcon(lang.name) }}</span>
         {{ lang.name }}
