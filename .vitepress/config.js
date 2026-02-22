@@ -4,11 +4,20 @@ import { fileURLToPath } from 'url'
 import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 
+const base = process.env.VERCEL ? '/' : '/Prep/'
+
 export default withMermaid(
     defineConfig({
         title: 'ElevateU',
         description: 'Complete CS Preparation - DSA, LLD, OS, DBMS, CN, SQL',
-        base: process.env.VERCEL ? '/' : '/Prep/',
+        base,
+        head: [
+            ['link', { rel: 'icon', href: `${base}favicons/favicon.ico` }],
+            ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicons/favicon.svg` }],
+            ['link', { rel: 'icon', type: 'image/png', sizes: '96x96', href: `${base}favicons/favicon-96x96.png` }],
+            ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: `${base}favicons/apple-touch-icon.png` }],
+            ['link', { rel: 'manifest', href: `${base}favicons/site.webmanifest` }],
+        ],
         ignoreDeadLinks: true,
 
         mermaid: {
