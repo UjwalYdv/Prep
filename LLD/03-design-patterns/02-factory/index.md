@@ -526,99 +526,99 @@ if __name__ == "__main__":
 ```typescript path=null start=null
 // Product interface
 interface Notification {
-	send(title: string, message: string): void
+  send(title: string, message: string): void
 }
 
 // Concrete products
 class EmailNotification implements Notification {
-	private email: string
+  private email: string
 
-	constructor(email: string) {
-		this.email = email
-	}
+  constructor(email: string) {
+    this.email = email
+  }
 
-	send(title: string, message: string): void {
-		console.log(`Email sent to ${this.email}`)
-		console.log(`Subject: ${title}`)
-		console.log(`Body: ${message}`)
-	}
+  send(title: string, message: string): void {
+    console.log(`Email sent to ${this.email}`)
+    console.log(`Subject: ${title}`)
+    console.log(`Body: ${message}`)
+  }
 }
 
 class SMSNotification implements Notification {
-	private phoneNumber: string
+  private phoneNumber: string
 
-	constructor(phoneNumber: string) {
-		this.phoneNumber = phoneNumber
-	}
+  constructor(phoneNumber: string) {
+    this.phoneNumber = phoneNumber
+  }
 
-	send(title: string, message: string): void {
-		console.log(`SMS sent to ${this.phoneNumber}`)
-		console.log(`Message: ${title} - ${message}`)
-	}
+  send(title: string, message: string): void {
+    console.log(`SMS sent to ${this.phoneNumber}`)
+    console.log(`Message: ${title} - ${message}`)
+  }
 }
 
 class PushNotification implements Notification {
-	private deviceId: string
+  private deviceId: string
 
-	constructor(deviceId: string) {
-		this.deviceId = deviceId
-	}
+  constructor(deviceId: string) {
+    this.deviceId = deviceId
+  }
 
-	send(title: string, message: string): void {
-		console.log(`Push notification sent to device ${this.deviceId}`)
-		console.log(`Title: ${title}`)
-		console.log(`Message: ${message}`)
-	}
+  send(title: string, message: string): void {
+    console.log(`Push notification sent to device ${this.deviceId}`)
+    console.log(`Title: ${title}`)
+    console.log(`Message: ${message}`)
+  }
 }
 
 // Factory Method Pattern
 abstract class NotificationCreator {
-	abstract createNotification(contact: string): Notification
+  abstract createNotification(contact: string): Notification
 
-	public sendNotification(contact: string, title: string, message: string): void {
-		const notification = this.createNotification(contact)
-		notification.send(title, message)
-	}
+  public sendNotification(contact: string, title: string, message: string): void {
+    const notification = this.createNotification(contact)
+    notification.send(title, message)
+  }
 }
 
 class EmailNotificationCreator extends NotificationCreator {
-	createNotification(email: string): Notification {
-		return new EmailNotification(email)
-	}
+  createNotification(email: string): Notification {
+    return new EmailNotification(email)
+  }
 }
 
 class SMSNotificationCreator extends NotificationCreator {
-	createNotification(phoneNumber: string): Notification {
-		return new SMSNotification(phoneNumber)
-	}
+  createNotification(phoneNumber: string): Notification {
+    return new SMSNotification(phoneNumber)
+  }
 }
 
 class PushNotificationCreator extends NotificationCreator {
-	createNotification(deviceId: string): Notification {
-		return new PushNotification(deviceId)
-	}
+  createNotification(deviceId: string): Notification {
+    return new PushNotification(deviceId)
+  }
 }
 
 // Simple Factory
 enum NotificationType {
-	EMAIL = 'email',
-	SMS = 'sms',
-	PUSH = 'push',
+  EMAIL = 'email',
+  SMS = 'sms',
+  PUSH = 'push',
 }
 
 class NotificationFactory {
-	static createNotification(type: NotificationType, contact: string): Notification {
-		switch (type) {
-			case NotificationType.EMAIL:
-				return new EmailNotification(contact)
-			case NotificationType.SMS:
-				return new SMSNotification(contact)
-			case NotificationType.PUSH:
-				return new PushNotification(contact)
-			default:
-				throw new Error(`Unknown notification type: ${type}`)
-		}
-	}
+  static createNotification(type: NotificationType, contact: string): Notification {
+    switch (type) {
+      case NotificationType.EMAIL:
+        return new EmailNotification(contact)
+      case NotificationType.SMS:
+        return new SMSNotification(contact)
+      case NotificationType.PUSH:
+        return new PushNotification(contact)
+      default:
+        throw new Error(`Unknown notification type: ${type}`)
+    }
+  }
 }
 
 // Usage
@@ -630,8 +630,8 @@ smsCreator.sendNotification('+1234567890', 'Alert', 'Your order is ready!')
 
 // Using simple factory
 const emailNotification = NotificationFactory.createNotification(
-	NotificationType.EMAIL,
-	'admin@company.com',
+  NotificationType.EMAIL,
+  'admin@company.com',
 )
 emailNotification.send('System Alert', 'Server is down!')
 ```
@@ -923,206 +923,206 @@ if __name__ == "__main__":
 ```typescript path=null start=null
 // Product interface
 interface GameCharacter {
-	name: string
-	level: number
-	health: number
-	attack(): string
-	defend(): string
-	specialAbility(): string
-	getStats(): object
+  name: string
+  level: number
+  health: number
+  attack(): string
+  defend(): string
+  specialAbility(): string
+  getStats(): object
 }
 
 // Concrete products
 class Warrior implements GameCharacter {
-	name: string
-	level: number
-	health: number
-	armor: number
+  name: string
+  level: number
+  health: number
+  armor: number
 
-	constructor(name: string, level: number = 1) {
-		this.name = name
-		this.level = level
-		this.health = 100 + level * 20
-		this.armor = 50 + level * 10
-	}
+  constructor(name: string, level: number = 1) {
+    this.name = name
+    this.level = level
+    this.health = 100 + level * 20
+    this.armor = 50 + level * 10
+  }
 
-	attack(): string {
-		const damage = 20 + this.level * 5
-		return `${this.name} swings sword for ${damage} damage!`
-	}
+  attack(): string {
+    const damage = 20 + this.level * 5
+    return `${this.name} swings sword for ${damage} damage!`
+  }
 
-	defend(): string {
-		return `${this.name} raises shield, reducing incoming damage by ${this.armor}%`
-	}
+  defend(): string {
+    return `${this.name} raises shield, reducing incoming damage by ${this.armor}%`
+  }
 
-	specialAbility(): string {
-		return `${this.name} uses Battle Cry, increasing team damage by 25%!`
-	}
+  specialAbility(): string {
+    return `${this.name} uses Battle Cry, increasing team damage by 25%!`
+  }
 
-	getStats(): object {
-		return {
-			type: 'Warrior',
-			name: this.name,
-			level: this.level,
-			health: this.health,
-			armor: this.armor,
-		}
-	}
+  getStats(): object {
+    return {
+      type: 'Warrior',
+      name: this.name,
+      level: this.level,
+      health: this.health,
+      armor: this.armor,
+    }
+  }
 }
 
 class Mage implements GameCharacter {
-	name: string
-	level: number
-	health: number
-	mana: number
+  name: string
+  level: number
+  health: number
+  mana: number
 
-	constructor(name: string, level: number = 1) {
-		this.name = name
-		this.level = level
-		this.health = 60 + level * 10
-		this.mana = 100 + level * 15
-	}
+  constructor(name: string, level: number = 1) {
+    this.name = name
+    this.level = level
+    this.health = 60 + level * 10
+    this.mana = 100 + level * 15
+  }
 
-	attack(): string {
-		const damage = 30 + this.level * 8
-		return `${this.name} casts fireball for ${damage} magical damage!`
-	}
+  attack(): string {
+    const damage = 30 + this.level * 8
+    return `${this.name} casts fireball for ${damage} magical damage!`
+  }
 
-	defend(): string {
-		return `${this.name} creates magical barrier, absorbing 30% of damage`
-	}
+  defend(): string {
+    return `${this.name} creates magical barrier, absorbing 30% of damage`
+  }
 
-	specialAbility(): string {
-		return `${this.name} casts Meteor Storm, dealing area damage!`
-	}
+  specialAbility(): string {
+    return `${this.name} casts Meteor Storm, dealing area damage!`
+  }
 
-	getStats(): object {
-		return {
-			type: 'Mage',
-			name: this.name,
-			level: this.level,
-			health: this.health,
-			mana: this.mana,
-		}
-	}
+  getStats(): object {
+    return {
+      type: 'Mage',
+      name: this.name,
+      level: this.level,
+      health: this.health,
+      mana: this.mana,
+    }
+  }
 }
 
 class Archer implements GameCharacter {
-	name: string
-	level: number
-	health: number
-	accuracy: number
+  name: string
+  level: number
+  health: number
+  accuracy: number
 
-	constructor(name: string, level: number = 1) {
-		this.name = name
-		this.level = level
-		this.health = 80 + level * 15
-		this.accuracy = 70 + level * 5
-	}
+  constructor(name: string, level: number = 1) {
+    this.name = name
+    this.level = level
+    this.health = 80 + level * 15
+    this.accuracy = 70 + level * 5
+  }
 
-	attack(): string {
-		const damage = 25 + this.level * 6
-		return `${this.name} shoots arrow for ${damage} damage with ${this.accuracy}% accuracy!`
-	}
+  attack(): string {
+    const damage = 25 + this.level * 6
+    return `${this.name} shoots arrow for ${damage} damage with ${this.accuracy}% accuracy!`
+  }
 
-	defend(): string {
-		return `${this.name} dodges with agility, avoiding 40% of attacks`
-	}
+  defend(): string {
+    return `${this.name} dodges with agility, avoiding 40% of attacks`
+  }
 
-	specialAbility(): string {
-		return `${this.name} uses Multi-Shot, hitting all enemies!`
-	}
+  specialAbility(): string {
+    return `${this.name} uses Multi-Shot, hitting all enemies!`
+  }
 
-	getStats(): object {
-		return {
-			type: 'Archer',
-			name: this.name,
-			level: this.level,
-			health: this.health,
-			accuracy: this.accuracy,
-		}
-	}
+  getStats(): object {
+    return {
+      type: 'Archer',
+      name: this.name,
+      level: this.level,
+      health: this.health,
+      accuracy: this.accuracy,
+    }
+  }
 }
 
 // Factory Method Pattern
 abstract class CharacterCreator {
-	abstract createCharacter(name: string, level?: number): GameCharacter
+  abstract createCharacter(name: string, level?: number): GameCharacter
 
-	public createPlayerCharacter(name: string, level: number = 1): GameCharacter {
-		const character = this.createCharacter(name, level)
-		console.log(`Created ${character.getStats()}`)
-		return character
-	}
+  public createPlayerCharacter(name: string, level: number = 1): GameCharacter {
+    const character = this.createCharacter(name, level)
+    console.log(`Created ${character.getStats()}`)
+    return character
+  }
 }
 
 class WarriorCreator extends CharacterCreator {
-	createCharacter(name: string, level: number = 1): GameCharacter {
-		return new Warrior(name, level)
-	}
+  createCharacter(name: string, level: number = 1): GameCharacter {
+    return new Warrior(name, level)
+  }
 }
 
 class MageCreator extends CharacterCreator {
-	createCharacter(name: string, level: number = 1): GameCharacter {
-		return new Mage(name, level)
-	}
+  createCharacter(name: string, level: number = 1): GameCharacter {
+    return new Mage(name, level)
+  }
 }
 
 class ArcherCreator extends CharacterCreator {
-	createCharacter(name: string, level: number = 1): GameCharacter {
-		return new Archer(name, level)
-	}
+  createCharacter(name: string, level: number = 1): GameCharacter {
+    return new Archer(name, level)
+  }
 }
 
 // Simple Factory
 enum CharacterType {
-	WARRIOR = 'warrior',
-	MAGE = 'mage',
-	ARCHER = 'archer',
+  WARRIOR = 'warrior',
+  MAGE = 'mage',
+  ARCHER = 'archer',
 }
 
 class GameCharacterFactory {
-	static createCharacter(type: CharacterType, name: string, level: number = 1): GameCharacter {
-		switch (type) {
-			case CharacterType.WARRIOR:
-				return new Warrior(name, level)
-			case CharacterType.MAGE:
-				return new Mage(name, level)
-			case CharacterType.ARCHER:
-				return new Archer(name, level)
-			default:
-				throw new Error(`Unknown character type: ${type}`)
-		}
-	}
+  static createCharacter(type: CharacterType, name: string, level: number = 1): GameCharacter {
+    switch (type) {
+      case CharacterType.WARRIOR:
+        return new Warrior(name, level)
+      case CharacterType.MAGE:
+        return new Mage(name, level)
+      case CharacterType.ARCHER:
+        return new Archer(name, level)
+      default:
+        throw new Error(`Unknown character type: ${type}`)
+    }
+  }
 
-	static getAvailableTypes(): CharacterType[] {
-		return Object.values(CharacterType)
-	}
+  static getAvailableTypes(): CharacterType[] {
+    return Object.values(CharacterType)
+  }
 }
 
 // Game class using the factory
 class Game {
-	private characters: GameCharacter[] = []
+  private characters: GameCharacter[] = []
 
-	createPlayerCharacter(type: CharacterType, name: string, level: number = 1): GameCharacter {
-		const character = GameCharacterFactory.createCharacter(type, name, level)
-		this.characters.push(character)
-		console.log(`${character.name} the ${type} joined the party!`)
-		return character
-	}
+  createPlayerCharacter(type: CharacterType, name: string, level: number = 1): GameCharacter {
+    const character = GameCharacterFactory.createCharacter(type, name, level)
+    this.characters.push(character)
+    console.log(`${character.name} the ${type} joined the party!`)
+    return character
+  }
 
-	startBattle(): void {
-		console.log('\\n=== BATTLE STARTS ===')
-		this.characters.forEach((character) => {
-			console.log(character.attack())
-			console.log(character.defend())
-			console.log(character.specialAbility())
-			console.log('---')
-		})
-	}
+  startBattle(): void {
+    console.log('\\n=== BATTLE STARTS ===')
+    this.characters.forEach((character) => {
+      console.log(character.attack())
+      console.log(character.defend())
+      console.log(character.specialAbility())
+      console.log('---')
+    })
+  }
 
-	getPartyStats(): object[] {
-		return this.characters.map((char) => char.getStats())
-	}
+  getPartyStats(): object[] {
+    return this.characters.map((char) => char.getStats())
+  }
 }
 
 // Usage
@@ -1162,10 +1162,6 @@ graph TD
     B --> B1[✅ Easy to implement<br/>✅ Centralized creation<br/>❌ Not extensible<br/>❌ Violates OCP]
     C --> C1[✅ Extensible<br/>✅ Follows OCP<br/>✅ Flexible<br/>❌ More complex]
     D --> D1[✅ Related products<br/>✅ Family consistency<br/>❌ Complex structure<br/>❌ Hard to extend]
-
-    style B1 fill:#fff3cd
-    style C1 fill:#d4edda
-    style D1 fill:#d1ecf1
 ```
 
 ### 🏗️ When to Use Each Pattern

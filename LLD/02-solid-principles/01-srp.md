@@ -184,10 +184,10 @@ int main() {
 ### Problems with This Design
 
 1. **Multiple Reasons to Change**:
-    - Tax calculation rules change
-    - Database schema changes
-    - Email system changes
-    - Report format changes
+   - Tax calculation rules change
+   - Database schema changes
+   - Email system changes
+   - Report format changes
 
 2. **High Coupling**: Changes in one area affect others
 3. **Difficult Testing**: Can't test parts in isolation
@@ -605,7 +605,6 @@ public:
 ## 🏗️ Class Diagram After SRP
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 classDiagram
     class Employee {
         -String name
@@ -1274,5 +1273,3 @@ The Single Responsibility Principle is about creating **focused, cohesive classe
 - ✅ **Clearer code**: Each class has a clear, single purpose
 
 Remember: **A class should have only one reason to change!**
-
----

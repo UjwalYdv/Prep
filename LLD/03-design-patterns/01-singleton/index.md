@@ -46,7 +46,6 @@ Consider these scenarios:
 <div align = "center">
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 classDiagram
     class Singleton {
         -instance: Singleton
@@ -68,7 +67,6 @@ classDiagram
 <div align = "center">
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 classDiagram
     class Client
     class Singleton {
@@ -89,7 +87,6 @@ classDiagram
 ### Sequence Diagram
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 sequenceDiagram
     participant Client1
     participant Client2
@@ -273,7 +270,6 @@ Logger.getInstance().log(Logger.LogLevel.ERROR, "Something went wrong");
 ### 📊 Thread Safety Comparison
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 graph TD
     A[Singleton Implementations] --> B[Eager Initialization]
     A --> C[Lazy Initialization]
@@ -284,11 +280,6 @@ graph TD
     C --> C1["❌ Not thread-safe\n✅ Memory efficient"]
     D --> D1["✅ Thread-safe\n✅ Memory efficient\n❌ Complex"]
     E --> E1["✅ Thread-safe\n✅ Simple\n✅ Serialization-safe"]
-
-    style B1 fill:#fff3cd
-    style C1 fill:#f8d7da
-    style D1 fill:#d4edda
-    style E1 fill:#d1ecf1
 ```
 
 ## ❌ Common Pitfalls
@@ -507,7 +498,5 @@ public class Logger {
 3. **Handle thread safety** properly
 4. **Be aware of testing challenges**
 5. **Consider alternatives** like dependency injection
-
----
 
 [← Back to Design Patterns](../) | [Next: Factory Pattern →](../02-factory/)

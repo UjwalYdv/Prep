@@ -54,15 +54,6 @@ graph TB
     B --> F[Thread 3]
     C --> G[Thread 1]
     C --> H[Thread 2]
-
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#f3e5f5
-    style D fill:#e8f5e8
-    style E fill:#e8f5e8
-    style F fill:#e8f5e8
-    style G fill:#e8f5e8
-    style H fill:#e8f5e8
 ```
 
 | Aspect            | Process               | Thread               |
@@ -1545,10 +1536,6 @@ graph LR
     R3 --> DB
     W1 -.-> DB
     W2 -.-> DB
-
-    style DB fill:#e3f2fd
-    style W1 fill:#ffebee
-    style W2 fill:#ffebee
 ```
 
 </div>
@@ -1736,10 +1723,6 @@ graph TB
         P5 -.-> F5
         P5 -.-> F4
     end
-
-    style P2 fill:#e8f5e8
-    style F1 fill:#ffebee
-    style F2 fill:#ffebee
 ```
 
 </div>
@@ -2245,10 +2228,6 @@ flowchart TB
 
     G --> I["Adjust if needed"]
     H --> I
-
-    style C fill:#ffebee
-    style D fill:#e8f5e8
-    style I fill:#e3f2fd
 ```
 
 </div>
@@ -2535,12 +2514,6 @@ flowchart TD
     D --> H[Use tryLock with timeout]
     E --> I[Use atomic operations]
     F --> J[Detect cycles in resource allocation]
-
-    style A fill:#ffebee
-    style G fill:#e8f5e8
-    style H fill:#e8f5e8
-    style I fill:#e8f5e8
-    style J fill:#e8f5e8
 
 ````
 </div>
@@ -3476,18 +3449,18 @@ public class MultithreadedTesting {
 ### Essential Books 📚
 
 1. **"Java Concurrency in Practice"** by Brian Goetz
-    - The definitive guide to Java concurrency
-    - Best practices and patterns
-    - Advanced topics and performance
+   - The definitive guide to Java concurrency
+   - Best practices and patterns
+   - Advanced topics and performance
 
 2. **"Effective Java"** by Joshua Bloch
-    - Item 78-84 cover concurrency
-    - Best practices for thread safety
-    - Modern Java concurrency features
+   - Item 78-84 cover concurrency
+   - Best practices for thread safety
+   - Modern Java concurrency features
 
 3. **"Java: The Complete Reference"** by Herbert Schildt
-    - Comprehensive coverage of multithreading
-    - Good for beginners and reference
+   - Comprehensive coverage of multithreading
+   - Good for beginners and reference
 
 ### Online Resources 🌐
 
@@ -4028,17 +4001,3 @@ Multithreading is a powerful tool, but with great power comes great responsibili
 - 📊 **Monitor performance**
 - 📜 **Document your concurrency design**
 - 🤝 **Share knowledge** with your team
-
-Happy coding! 🚀✨
-
----
-
-<div align="center">
-
-**Made with ❤️ for Java developers worldwide**
-
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)
-[![Multithreading](https://img.shields.io/badge/Multithreading-Expert%20Level-brightgreen?style=for-the-badge)]()
-[![Open Source](https://img.shields.io/badge/Open%20Source-Community%20Driven-blue?style=for-the-badge)]()
-
-</div>

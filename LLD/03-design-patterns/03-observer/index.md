@@ -754,271 +754,271 @@ if __name__ == "__main__":
 ```typescript path=null start=null
 // Generic Event System
 interface IObserver<T> {
-	update(data: T): void
+  update(data: T): void
 }
 
 interface ISubject<T> {
-	subscribe(observer: IObserver<T>): void
-	unsubscribe(observer: IObserver<T>): void
-	notify(data: T): void
+  subscribe(observer: IObserver<T>): void
+  unsubscribe(observer: IObserver<T>): void
+  notify(data: T): void
 }
 
 // Base Event class
 abstract class EventSubject<T> implements ISubject<T> {
-	private observers: Set<IObserver<T>> = new Set()
+  private observers: Set<IObserver<T>> = new Set()
 
-	subscribe(observer: IObserver<T>): void {
-		this.observers.add(observer)
-	}
+  subscribe(observer: IObserver<T>): void {
+    this.observers.add(observer)
+  }
 
-	unsubscribe(observer: IObserver<T>): void {
-		this.observers.delete(observer)
-	}
+  unsubscribe(observer: IObserver<T>): void {
+    this.observers.delete(observer)
+  }
 
-	notify(data: T): void {
-		this.observers.forEach((observer) => {
-			try {
-				observer.update(data)
-			} catch (error) {
-				console.error('Error notifying observer:', error)
-			}
-		})
-	}
+  notify(data: T): void {
+    this.observers.forEach((observer) => {
+      try {
+        observer.update(data)
+      } catch (error) {
+        console.error('Error notifying observer:', error)
+      }
+    })
+  }
 
-	getObserverCount(): number {
-		return this.observers.size
-	}
+  getObserverCount(): number {
+    return this.observers.size
+  }
 }
 
 // User Management System
 interface UserEvent {
-	type: 'USER_CREATED' | 'USER_UPDATED' | 'USER_DELETED' | 'USER_LOGIN' | 'USER_LOGOUT'
-	userId: string
-	userData?: any
-	timestamp: Date
+  type: 'USER_CREATED' | 'USER_UPDATED' | 'USER_DELETED' | 'USER_LOGIN' | 'USER_LOGOUT'
+  userId: string
+  userData?: any
+  timestamp: Date
 }
 
 interface User {
-	id: string
-	name: string
-	email: string
-	isActive: boolean
+  id: string
+  name: string
+  email: string
+  isActive: boolean
 }
 
 class UserManager extends EventSubject<UserEvent> {
-	private users: Map<string, User> = new Map()
+  private users: Map<string, User> = new Map()
 
-	createUser(user: User): void {
-		this.users.set(user.id, user)
-		this.notify({
-			type: 'USER_CREATED',
-			userId: user.id,
-			userData: user,
-			timestamp: new Date(),
-		})
-	}
+  createUser(user: User): void {
+    this.users.set(user.id, user)
+    this.notify({
+      type: 'USER_CREATED',
+      userId: user.id,
+      userData: user,
+      timestamp: new Date(),
+    })
+  }
 
-	updateUser(userId: string, updates: Partial<User>): void {
-		const user = this.users.get(userId)
-		if (user) {
-			const updatedUser = { ...user, ...updates }
-			this.users.set(userId, updatedUser)
-			this.notify({
-				type: 'USER_UPDATED',
-				userId: userId,
-				userData: updatedUser,
-				timestamp: new Date(),
-			})
-		}
-	}
+  updateUser(userId: string, updates: Partial<User>): void {
+    const user = this.users.get(userId)
+    if (user) {
+      const updatedUser = { ...user, ...updates }
+      this.users.set(userId, updatedUser)
+      this.notify({
+        type: 'USER_UPDATED',
+        userId: userId,
+        userData: updatedUser,
+        timestamp: new Date(),
+      })
+    }
+  }
 
-	deleteUser(userId: string): void {
-		const user = this.users.get(userId)
-		if (user) {
-			this.users.delete(userId)
-			this.notify({
-				type: 'USER_DELETED',
-				userId: userId,
-				userData: user,
-				timestamp: new Date(),
-			})
-		}
-	}
+  deleteUser(userId: string): void {
+    const user = this.users.get(userId)
+    if (user) {
+      this.users.delete(userId)
+      this.notify({
+        type: 'USER_DELETED',
+        userId: userId,
+        userData: user,
+        timestamp: new Date(),
+      })
+    }
+  }
 
-	loginUser(userId: string): void {
-		this.notify({
-			type: 'USER_LOGIN',
-			userId: userId,
-			timestamp: new Date(),
-		})
-	}
+  loginUser(userId: string): void {
+    this.notify({
+      type: 'USER_LOGIN',
+      userId: userId,
+      timestamp: new Date(),
+    })
+  }
 
-	logoutUser(userId: string): void {
-		this.notify({
-			type: 'USER_LOGOUT',
-			userId: userId,
-			timestamp: new Date(),
-		})
-	}
+  logoutUser(userId: string): void {
+    this.notify({
+      type: 'USER_LOGOUT',
+      userId: userId,
+      timestamp: new Date(),
+    })
+  }
 
-	getUser(userId: string): User | undefined {
-		return this.users.get(userId)
-	}
+  getUser(userId: string): User | undefined {
+    return this.users.get(userId)
+  }
 
-	getAllUsers(): User[] {
-		return Array.from(this.users.values())
-	}
+  getAllUsers(): User[] {
+    return Array.from(this.users.values())
+  }
 }
 
 // Concrete Observers
 class EmailNotificationService implements IObserver<UserEvent> {
-	private name: string
+  private name: string
 
-	constructor(name: string) {
-		this.name = name
-	}
+  constructor(name: string) {
+    this.name = name
+  }
 
-	update(event: UserEvent): void {
-		switch (event.type) {
-			case 'USER_CREATED':
-				this.sendWelcomeEmail(event.userData)
-				break
-			case 'USER_UPDATED':
-				this.sendUpdateNotificationEmail(event.userData)
-				break
-			case 'USER_DELETED':
-				this.sendGoodbyeEmail(event.userData)
-				break
-			default:
-				// No email for login/logout events
-				break
-		}
-	}
+  update(event: UserEvent): void {
+    switch (event.type) {
+      case 'USER_CREATED':
+        this.sendWelcomeEmail(event.userData)
+        break
+      case 'USER_UPDATED':
+        this.sendUpdateNotificationEmail(event.userData)
+        break
+      case 'USER_DELETED':
+        this.sendGoodbyeEmail(event.userData)
+        break
+      default:
+        // No email for login/logout events
+        break
+    }
+  }
 
-	private sendWelcomeEmail(user: User): void {
-		console.log(`[${this.name}] 📧 Sending welcome email to ${user.email}`)
-	}
+  private sendWelcomeEmail(user: User): void {
+    console.log(`[${this.name}] 📧 Sending welcome email to ${user.email}`)
+  }
 
-	private sendUpdateNotificationEmail(user: User): void {
-		console.log(`[${this.name}] 📧 Sending profile update notification to ${user.email}`)
-	}
+  private sendUpdateNotificationEmail(user: User): void {
+    console.log(`[${this.name}] 📧 Sending profile update notification to ${user.email}`)
+  }
 
-	private sendGoodbyeEmail(user: User): void {
-		console.log(`[${this.name}] 📧 Sending account deletion confirmation to ${user.email}`)
-	}
+  private sendGoodbyeEmail(user: User): void {
+    console.log(`[${this.name}] 📧 Sending account deletion confirmation to ${user.email}`)
+  }
 }
 
 class AuditLogger implements IObserver<UserEvent> {
-	private logs: UserEvent[] = []
+  private logs: UserEvent[] = []
 
-	update(event: UserEvent): void {
-		this.logs.push(event)
-		this.logEvent(event)
-	}
+  update(event: UserEvent): void {
+    this.logs.push(event)
+    this.logEvent(event)
+  }
 
-	private logEvent(event: UserEvent): void {
-		console.log(
-			`[Audit Logger] 📝 ${event.type}: User ${event.userId} at ${event.timestamp.toISOString()}`,
-		)
-	}
+  private logEvent(event: UserEvent): void {
+    console.log(
+      `[Audit Logger] 📝 ${event.type}: User ${event.userId} at ${event.timestamp.toISOString()}`,
+    )
+  }
 
-	getRecentLogs(limit: number = 10): UserEvent[] {
-		return this.logs.slice(-limit)
-	}
+  getRecentLogs(limit: number = 10): UserEvent[] {
+    return this.logs.slice(-limit)
+  }
 
-	getLogsByType(type: UserEvent['type']): UserEvent[] {
-		return this.logs.filter((log) => log.type === type)
-	}
+  getLogsByType(type: UserEvent['type']): UserEvent[] {
+    return this.logs.filter((log) => log.type === type)
+  }
 }
 
 class AnalyticsTracker implements IObserver<UserEvent> {
-	private stats = {
-		usersCreated: 0,
-		usersUpdated: 0,
-		usersDeleted: 0,
-		userLogins: 0,
-		userLogouts: 0,
-	}
+  private stats = {
+    usersCreated: 0,
+    usersUpdated: 0,
+    usersDeleted: 0,
+    userLogins: 0,
+    userLogouts: 0,
+  }
 
-	update(event: UserEvent): void {
-		switch (event.type) {
-			case 'USER_CREATED':
-				this.stats.usersCreated++
-				break
-			case 'USER_UPDATED':
-				this.stats.usersUpdated++
-				break
-			case 'USER_DELETED':
-				this.stats.usersDeleted++
-				break
-			case 'USER_LOGIN':
-				this.stats.userLogins++
-				break
-			case 'USER_LOGOUT':
-				this.stats.userLogouts++
-				break
-		}
+  update(event: UserEvent): void {
+    switch (event.type) {
+      case 'USER_CREATED':
+        this.stats.usersCreated++
+        break
+      case 'USER_UPDATED':
+        this.stats.usersUpdated++
+        break
+      case 'USER_DELETED':
+        this.stats.usersDeleted++
+        break
+      case 'USER_LOGIN':
+        this.stats.userLogins++
+        break
+      case 'USER_LOGOUT':
+        this.stats.userLogouts++
+        break
+    }
 
-		this.reportStats(event.type)
-	}
+    this.reportStats(event.type)
+  }
 
-	private reportStats(eventType: string): void {
-		console.log(`[Analytics] 📊 Event: ${eventType}, Current stats:`, this.stats)
-	}
+  private reportStats(eventType: string): void {
+    console.log(`[Analytics] 📊 Event: ${eventType}, Current stats:`, this.stats)
+  }
 
-	getStats() {
-		return { ...this.stats }
-	}
+  getStats() {
+    return { ...this.stats }
+  }
 }
 
 class DatabaseSyncService implements IObserver<UserEvent> {
-	private syncQueue: UserEvent[] = []
+  private syncQueue: UserEvent[] = []
 
-	update(event: UserEvent): void {
-		this.syncQueue.push(event)
-		this.processSync(event)
-	}
+  update(event: UserEvent): void {
+    this.syncQueue.push(event)
+    this.processSync(event)
+  }
 
-	private processSync(event: UserEvent): void {
-		console.log(`[DB Sync] 🔄 Syncing ${event.type} for user ${event.userId}`)
-		// Simulate database sync
-		setTimeout(() => {
-			this.syncQueue = this.syncQueue.filter((e) => e !== event)
-			console.log(`[DB Sync] ✅ Sync completed for ${event.type} - ${event.userId}`)
-		}, 100)
-	}
+  private processSync(event: UserEvent): void {
+    console.log(`[DB Sync] 🔄 Syncing ${event.type} for user ${event.userId}`)
+    // Simulate database sync
+    setTimeout(() => {
+      this.syncQueue = this.syncQueue.filter((e) => e !== event)
+      console.log(`[DB Sync] ✅ Sync completed for ${event.type} - ${event.userId}`)
+    }, 100)
+  }
 
-	getPendingSyncs(): UserEvent[] {
-		return [...this.syncQueue]
-	}
+  getPendingSyncs(): UserEvent[] {
+    return [...this.syncQueue]
+  }
 }
 
 // Conditional Observer - only subscribes to specific event types
 class LoginTracker implements IObserver<UserEvent> {
-	private loginSessions: Map<string, Date> = new Map()
+  private loginSessions: Map<string, Date> = new Map()
 
-	update(event: UserEvent): void {
-		// Only handle login/logout events
-		if (event.type === 'USER_LOGIN') {
-			this.loginSessions.set(event.userId, event.timestamp)
-			console.log(
-				`[Login Tracker] 👤 User ${event.userId} logged in at ${event.timestamp.toLocaleTimeString()}`,
-			)
-		} else if (event.type === 'USER_LOGOUT') {
-			const loginTime = this.loginSessions.get(event.userId)
-			if (loginTime) {
-				const sessionDuration = event.timestamp.getTime() - loginTime.getTime()
-				console.log(
-					`[Login Tracker] 👤 User ${event.userId} logged out. Session duration: ${Math.round(sessionDuration / 1000)} seconds`,
-				)
-				this.loginSessions.delete(event.userId)
-			}
-		}
-	}
+  update(event: UserEvent): void {
+    // Only handle login/logout events
+    if (event.type === 'USER_LOGIN') {
+      this.loginSessions.set(event.userId, event.timestamp)
+      console.log(
+        `[Login Tracker] 👤 User ${event.userId} logged in at ${event.timestamp.toLocaleTimeString()}`,
+      )
+    } else if (event.type === 'USER_LOGOUT') {
+      const loginTime = this.loginSessions.get(event.userId)
+      if (loginTime) {
+        const sessionDuration = event.timestamp.getTime() - loginTime.getTime()
+        console.log(
+          `[Login Tracker] 👤 User ${event.userId} logged out. Session duration: ${Math.round(sessionDuration / 1000)} seconds`,
+        )
+        this.loginSessions.delete(event.userId)
+      }
+    }
+  }
 
-	getActiveSessions(): Map<string, Date> {
-		return new Map(this.loginSessions)
-	}
+  getActiveSessions(): Map<string, Date> {
+    return new Map(this.loginSessions)
+  }
 }
 
 // Usage example
@@ -1044,23 +1044,23 @@ console.log(`Active observers: ${userManager.getObserverCount()}`)
 // Test user operations
 console.log('\\n--- Creating Users ---')
 userManager.createUser({
-	id: 'user1',
-	name: 'John Doe',
-	email: 'john@example.com',
-	isActive: true,
+  id: 'user1',
+  name: 'John Doe',
+  email: 'john@example.com',
+  isActive: true,
 })
 
 userManager.createUser({
-	id: 'user2',
-	name: 'Jane Smith',
-	email: 'jane@example.com',
-	isActive: true,
+  id: 'user2',
+  name: 'Jane Smith',
+  email: 'jane@example.com',
+  isActive: true,
 })
 
 console.log('\\n--- User Login/Logout ---')
 userManager.loginUser('user1')
 setTimeout(() => {
-	userManager.logoutUser('user1')
+  userManager.logoutUser('user1')
 }, 200)
 
 console.log('\\n--- Updating User ---')
@@ -1071,9 +1071,9 @@ userManager.deleteUser('user1')
 
 // Show final stats
 setTimeout(() => {
-	console.log('\\n--- Final Analytics ---')
-	console.log('Analytics Stats:', analytics.getStats())
-	console.log('Recent Audit Logs:', auditLogger.getRecentLogs(5))
+  console.log('\\n--- Final Analytics ---')
+  console.log('Analytics Stats:', analytics.getStats())
+  console.log('Recent Audit Logs:', auditLogger.getRecentLogs(5))
 }, 300)
 ```
 
@@ -1917,11 +1917,11 @@ class GoodObserver implements Observer {
 **A:**
 
 - **Push Model**: Subject sends data directly to observers in the update method
-    - Pros: Simple, observers get all needed data
-    - Cons: May send unnecessary data, less flexible
+  - Pros: Simple, observers get all needed data
+  - Cons: May send unnecessary data, less flexible
 - **Pull Model**: Subject sends minimal notification, observers pull data as needed
-    - Pros: More flexible, observers get only needed data
-    - Cons: Extra method calls, potential performance overhead
+  - Pros: More flexible, observers get only needed data
+  - Cons: Extra method calls, potential performance overhead
 
 **Q3: How does Observer pattern promote loose coupling?**
 

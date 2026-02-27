@@ -286,21 +286,21 @@ public class ProductService {
 **Answer:** There are three types of DI:
 
 1. **Constructor Injection** (Recommended):
-    - Use for mandatory dependencies
-    - Creates immutable objects
-    - Enables fail-fast behavior
-    - Better for testing
+   - Use for mandatory dependencies
+   - Creates immutable objects
+   - Enables fail-fast behavior
+   - Better for testing
 
 2. **Setter Injection**:
-    - Use for optional dependencies
-    - Allows circular dependencies (though not recommended)
-    - More readable for many dependencies
+   - Use for optional dependencies
+   - Allows circular dependencies (though not recommended)
+   - More readable for many dependencies
 
 3. **Field Injection** (Not Recommended):
-    - Convenient but creates tight coupling to Spring
-    - Harder to test
-    - Cannot create immutable objects
-    - Hidden dependencies
+   - Convenient but creates tight coupling to Spring
+   - Harder to test
+   - Cannot create immutable objects
+   - Hidden dependencies
 
 **Q3: What is the difference between IoC and Dependency Injection?**
 
@@ -310,20 +310,20 @@ public class ProductService {
 - **Dependency Injection** is a specific technique/pattern to implement IoC
 - IoC is the broader concept, DI is one way to achieve IoC
 - Other IoC techniques include
-    - `Factory pattern`
-    - `Event-based IoC`
-        - Spring provides an ApplicationEventPublisher and event listeners.
-        - Beans can publish and listen to events instead of calling each other directly → IoC via event delegation.
-    - `Template Method Pattern1` (IoC via Callbacks)
-        - Spring provides template classes like:
-            - `JdbcTemplate`
-            - `RestTemplate` (deprecated, but used earlier)
-            - `TransactionTemplate`
-        - You just provide the callback (business logic), and Spring controls the flow (connection management, transactions, etc.).
+  - `Factory pattern`
+  - `Event-based IoC`
+    - Spring provides an ApplicationEventPublisher and event listeners.
+    - Beans can publish and listen to events instead of calling each other directly → IoC via event delegation.
+  - `Template Method Pattern1` (IoC via Callbacks)
+    - Spring provides template classes like:
+      - `JdbcTemplate`
+      - `RestTemplate` (deprecated, but used earlier)
+      - `TransactionTemplate`
+    - You just provide the callback (business logic), and Spring controls the flow (connection management, transactions, etc.).
 
-    - `Service Locator Pattern`
-        - Instead of injecting dependencies, beans look them up using a Spring-provided `ApplicationContext` or `ServiceLocatorFactoryBean`.
-        - Less preferred than DI, but still IoC.
+  - `Service Locator Pattern`
+    - Instead of injecting dependencies, beans look them up using a Spring-provided `ApplicationContext` or `ServiceLocatorFactoryBean`.
+    - Less preferred than DI, but still IoC.
 
 ---
 
@@ -867,32 +867,32 @@ public class User {
 3. **Aware Interfaces**: Container calls aware interfaces (BeanNameAware, BeanFactoryAware, etc.)
 4. **BeanPostProcessor**: `postProcessBeforeInitialization()` called
 5. **Initialization**:
-    - `@PostConstruct` methods called
-    - `InitializingBean.afterPropertiesSet()` called
-    - Custom `init-method` called
+   - `@PostConstruct` methods called
+   - `InitializingBean.afterPropertiesSet()` called
+   - Custom `init-method` called
 6. **BeanPostProcessor**: `postProcessAfterInitialization()` called
 7. **Ready for Use**: Bean is ready for application use
 8. **Destruction** (on container shutdown):
-    - `@PreDestroy` methods called
-    - `DisposableBean.destroy()` called
-    - Custom `destroy-method` called
+   - `@PreDestroy` methods called
+   - `DisposableBean.destroy()` called
+   - Custom `destroy-method` called
 
 **Q2: What are the different bean scopes in Spring and when to use each?**
 
 **Answer:** Spring provides several bean scopes:
 
 1. **Singleton** (default): One instance per container
-    - Use for stateless services, DAOs, configuration beans
+   - Use for stateless services, DAOs, configuration beans
 2. **Prototype**: New instance for each request
-    - Use for stateful beans, beans with user-specific data
+   - Use for stateful beans, beans with user-specific data
 3. **Request**: One instance per HTTP request (web only)
-    - Use for request-specific data processing
+   - Use for request-specific data processing
 4. **Session**: One instance per HTTP session (web only)
-    - Use for user session data, shopping carts
+   - Use for user session data, shopping carts
 5. **GlobalSession**: One instance per global HTTP session (portlet)
-    - Use in portlet applications
+   - Use in portlet applications
 6. **Application**: One instance per ServletContext (web only)
-    - Use for application-wide shared data
+   - Use for application-wide shared data
 
 **Q3: How do you handle circular dependencies in Spring?**
 
@@ -916,9 +916,9 @@ public class BeanA {
 ```
 
 4. **Best Practices**:
-    - Redesign architecture to avoid circular dependencies
-    - Use interfaces and event-driven architecture
-    - Consider using `ApplicationEventPublisher` for decoupling
+   - Redesign architecture to avoid circular dependencies
+   - Use interfaces and event-driven architecture
+   - Consider using `ApplicationEventPublisher` for decoupling
 
 ---
 
@@ -2758,247 +2758,247 @@ public class ApplicationStartupListener implements ApplicationListener<Applicati
 ```yaml
 # application.yml
 spring:
-    application:
-        name: myapp
+  application:
+    name: myapp
 
-    profiles:
-        active: development
+  profiles:
+    active: development
 
-    datasource:
-        url: jdbc:mysql://localhost:3306/myapp
-        username: ${DB_USERNAME:myapp}
-        password: ${DB_PASSWORD:password}
-        driver-class-name: com.mysql.cj.jdbc.Driver
-        hikari:
-            maximum-pool-size: 20
-            minimum-idle: 5
-            idle-timeout: 300000
-            connection-timeout: 20000
-            max-lifetime: 1200000
-            pool-name: MyAppHikariCP
+  datasource:
+    url: jdbc:mysql://localhost:3306/myapp
+    username: ${DB_USERNAME:myapp}
+    password: ${DB_PASSWORD:password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      idle-timeout: 300000
+      connection-timeout: 20000
+      max-lifetime: 1200000
+      pool-name: MyAppHikariCP
 
-    jpa:
-        hibernate:
-            ddl-auto: validate
-        show-sql: false
-        properties:
-            hibernate:
-                dialect: org.hibernate.dialect.MySQL8Dialect
-                format_sql: true
-                use_sql_comments: true
-                jdbc:
-                    batch_size: 20
-                order_inserts: true
-                order_updates: true
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+        use_sql_comments: true
+        jdbc:
+          batch_size: 20
+        order_inserts: true
+        order_updates: true
 
-    liquibase:
-        change-log: classpath:db/changelog/db.changelog-master.xml
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
 
+  redis:
+    host: localhost
+    port: 6379
+    password: ${REDIS_PASSWORD:}
+    timeout: 2000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+
+  cache:
+    type: redis
     redis:
-        host: localhost
-        port: 6379
-        password: ${REDIS_PASSWORD:}
-        timeout: 2000ms
-        lettuce:
-            pool:
-                max-active: 8
-                max-idle: 8
-                min-idle: 0
+      time-to-live: 600000
 
-    cache:
-        type: redis
-        redis:
-            time-to-live: 600000
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
+            redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
+            scope:
+              - openid
+              - profile
+              - email
 
-    security:
-        oauth2:
-            client:
-                registration:
-                    google:
-                        client-id: ${GOOGLE_CLIENT_ID}
-                        client-secret: ${GOOGLE_CLIENT_SECRET}
-                        redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
-                        scope:
-                            - openid
-                            - profile
-                            - email
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${EMAIL_USERNAME}
+    password: ${EMAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            trust: smtp.gmail.com
 
-    mail:
-        host: smtp.gmail.com
-        port: 587
-        username: ${EMAIL_USERNAME}
-        password: ${EMAIL_PASSWORD}
-        properties:
-            mail:
-                smtp:
-                    auth: true
-                    starttls:
-                        enable: true
-                        required: true
-                    ssl:
-                        trust: smtp.gmail.com
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
 
-    servlet:
-        multipart:
-            max-file-size: 10MB
-            max-request-size: 10MB
-
-    jackson:
-        serialization:
-            write-dates-as-timestamps: false
-            indent-output: true
-        deserialization:
-            fail-on-unknown-properties: false
-        default-property-inclusion: NON_NULL
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+      indent-output: true
+    deserialization:
+      fail-on-unknown-properties: false
+    default-property-inclusion: NON_NULL
 
 server:
-    port: 8080
-    servlet:
-        context-path: /api
-    compression:
-        enabled: true
-        mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
-        min-response-size: 1024
-    http2:
-        enabled: true
+  port: 8080
+  servlet:
+    context-path: /api
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+    min-response-size: 1024
+  http2:
+    enabled: true
 
 logging:
-    level:
-        com.example.myapp: DEBUG
-        org.springframework.security: DEBUG
-        org.hibernate.SQL: DEBUG
-        org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-    pattern:
-        console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
-        file: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'
-    file:
-        name: logs/myapp.log
-        max-size: 10MB
-        max-history: 30
+  level:
+    com.example.myapp: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
+    file: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'
+  file:
+    name: logs/myapp.log
+    max-size: 10MB
+    max-history: 30
 
 management:
-    endpoints:
-        web:
-            exposure:
-                include: '*'
-            base-path: /actuator
-    endpoint:
-        health:
-            show-details: when-authorized
-            show-components: always
-        metrics:
-            enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /actuator
+  endpoint:
     health:
-        mail:
-            enabled: false
+      show-details: when-authorized
+      show-components: always
     metrics:
-        export:
-            prometheus:
-                enabled: true
+      enabled: true
+  health:
+    mail:
+      enabled: false
+  metrics:
+    export:
+      prometheus:
+        enabled: true
 
 # Custom application properties
 app:
-    name: MyApp
-    version: 1.0.0
-    description: My Spring Boot Application
+  name: MyApp
+  version: 1.0.0
+  description: My Spring Boot Application
 
-    cors:
-        allowed-origins: 'http://localhost:3000,http://localhost:4200'
-        allowed-methods: 'GET,POST,PUT,DELETE,PATCH'
-        allowed-headers: '*'
-        allow-credentials: true
-        max-age: 3600
+  cors:
+    allowed-origins: 'http://localhost:3000,http://localhost:4200'
+    allowed-methods: 'GET,POST,PUT,DELETE,PATCH'
+    allowed-headers: '*'
+    allow-credentials: true
+    max-age: 3600
 
-    jwt:
-        secret: ${JWT_SECRET:mySecretKey}
-        expiration: 86400000 # 24 hours
-        refresh-expiration: 604800000 # 7 days
+  jwt:
+    secret: ${JWT_SECRET:mySecretKey}
+    expiration: 86400000 # 24 hours
+    refresh-expiration: 604800000 # 7 days
 
-    file-upload:
-        directory: ${FILE_UPLOAD_DIR:./uploads}
-        max-size: 10MB
-        allowed-types: jpg,jpeg,png,pdf,doc,docx
+  file-upload:
+    directory: ${FILE_UPLOAD_DIR:./uploads}
+    max-size: 10MB
+    allowed-types: jpg,jpeg,png,pdf,doc,docx
 
-    email:
-        from: noreply@myapp.com
-        templates:
-            welcome: classpath:email-templates/welcome.html
-            password-reset: classpath:email-templates/password-reset.html
+  email:
+    from: noreply@myapp.com
+    templates:
+      welcome: classpath:email-templates/welcome.html
+      password-reset: classpath:email-templates/password-reset.html
 
-    scheduling:
-        enabled: true
-        pool-size: 5
+  scheduling:
+    enabled: true
+    pool-size: 5
 
-    async:
-        enabled: true
-        core-pool-size: 5
-        max-pool-size: 10
-        queue-capacity: 100
+  async:
+    enabled: true
+    core-pool-size: 5
+    max-pool-size: 10
+    queue-capacity: 100
 
 ---
 # Development Profile
 spring:
-    config:
-        activate:
-            on-profile: development
+  config:
+    activate:
+      on-profile: development
 
-    datasource:
-        url: jdbc:h2:mem:testdb
-        driver-class-name: org.h2.Driver
-        username: sa
-        password:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
 
-    h2:
-        console:
-            enabled: true
-            path: /h2-console
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
 
-    jpa:
-        hibernate:
-            ddl-auto: create-drop
-        show-sql: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
 
-    liquibase:
-        enabled: false
+  liquibase:
+    enabled: false
 
 logging:
-    level:
-        root: INFO
-        com.example.myapp: DEBUG
+  level:
+    root: INFO
+    com.example.myapp: DEBUG
 
 ---
 # Production Profile
 spring:
-    config:
-        activate:
-            on-profile: production
+  config:
+    activate:
+      on-profile: production
 
-    jpa:
-        hibernate:
-            ddl-auto: validate
-        show-sql: false
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
 
-    liquibase:
-        enabled: true
+  liquibase:
+    enabled: true
 
 logging:
-    level:
-        root: WARN
-        com.example.myapp: INFO
+  level:
+    root: WARN
+    com.example.myapp: INFO
 
 server:
-    ssl:
-        enabled: true
-        key-store: classpath:keystore.p12
-        key-store-password: ${KEYSTORE_PASSWORD}
-        key-store-type: PKCS12
-        key-alias: myapp
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: ${KEYSTORE_PASSWORD}
+    key-store-type: PKCS12
+    key-alias: myapp
 
 management:
-    endpoints:
-        web:
-            exposure:
-                include: health,info,metrics,prometheus
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
 ```
 
 ### Custom Configuration Properties
@@ -4280,47 +4280,47 @@ public class TestDataBuilder {
 **Answer:** Spring Boot provides several testing approaches:
 
 1. **Unit Tests** (`@ExtendWith(MockitoExtension.class)`):
-    - Test individual components in isolation
-    - Use `@Mock` and `@InjectMocks`
-    - Fastest execution, no Spring context
-    - Use for business logic testing
+   - Test individual components in isolation
+   - Use `@Mock` and `@InjectMocks`
+   - Fastest execution, no Spring context
+   - Use for business logic testing
 
 2. **Integration Tests** (`@SpringBootTest`):
-    - Test multiple components together
-    - Full or partial Spring context
-    - Test real interactions between layers
-    - Use for end-to-end scenarios
+   - Test multiple components together
+   - Full or partial Spring context
+   - Test real interactions between layers
+   - Use for end-to-end scenarios
 
 3. **Slice Tests**:
-    - `@WebMvcTest`: Test web layer only
-    - `@DataJpaTest`: Test JPA repositories
-    - `@JsonTest`: Test JSON serialization
-    - Faster than full integration tests
+   - `@WebMvcTest`: Test web layer only
+   - `@DataJpaTest`: Test JPA repositories
+   - `@JsonTest`: Test JSON serialization
+   - Faster than full integration tests
 
 **Q2: How do you implement security in Spring Boot applications?**
 
 **Answer:** Spring Boot security implementation involves:
 
 1. **Configuration**:
-    - `@EnableWebSecurity` for custom security config
-    - `SecurityFilterChain` bean for HTTP security
-    - Authentication and authorization rules
+   - `@EnableWebSecurity` for custom security config
+   - `SecurityFilterChain` bean for HTTP security
+   - Authentication and authorization rules
 
 2. **Authentication**:
-    - `UserDetailsService` for user loading
-    - `PasswordEncoder` for password hashing
-    - JWT or session-based authentication
+   - `UserDetailsService` for user loading
+   - `PasswordEncoder` for password hashing
+   - JWT or session-based authentication
 
 3. **Authorization**:
-    - URL-based: `.requestMatchers().hasRole()`
-    - Method-level: `@PreAuthorize`, `@PostAuthorize`
-    - Custom expressions with SpEL
+   - URL-based: `.requestMatchers().hasRole()`
+   - Method-level: `@PreAuthorize`, `@PostAuthorize`
+   - Custom expressions with SpEL
 
 4. **Best Practices**:
-    - HTTPS enforcement
-    - CSRF protection (for session-based)
-    - Security headers configuration
-    - Input validation and sanitization
+   - HTTPS enforcement
+   - CSRF protection (for session-based)
+   - Security headers configuration
+   - Input validation and sanitization
 
 **Q3: What is Spring Boot Actuator and what are its key features?**
 
@@ -4355,75 +4355,75 @@ public class TestDataBuilder {
 ### Spring Framework Best Practices
 
 1. **Dependency Injection**:
-    - Prefer constructor injection over field injection
-    - Use `@Autowired` sparingly, rely on constructor injection
-    - Avoid circular dependencies
+   - Prefer constructor injection over field injection
+   - Use `@Autowired` sparingly, rely on constructor injection
+   - Avoid circular dependencies
 
 2. **Configuration**:
-    - Use Java-based configuration over XML
-    - Leverage `@Profile` for environment-specific beans
-    - Use `@ConfigurationProperties` for external configuration
+   - Use Java-based configuration over XML
+   - Leverage `@Profile` for environment-specific beans
+   - Use `@ConfigurationProperties` for external configuration
 
 3. **AOP**:
-    - Keep aspects focused on cross-cutting concerns
-    - Use appropriate advice types (@Before, @After, @Around)
-    - Be mindful of performance implications
+   - Keep aspects focused on cross-cutting concerns
+   - Use appropriate advice types (@Before, @After, @Around)
+   - Be mindful of performance implications
 
 4. **Transaction Management**:
-    - Use `@Transactional` appropriately
-    - Understand propagation and isolation levels
-    - Handle exceptions properly for rollback
+   - Use `@Transactional` appropriately
+   - Understand propagation and isolation levels
+   - Handle exceptions properly for rollback
 
 ### Spring Boot Best Practices
 
 1. **Application Structure**:
-    - Follow standard package structure
-    - Separate concerns (controller, service, repository)
-    - Use DTOs for data transfer
+   - Follow standard package structure
+   - Separate concerns (controller, service, repository)
+   - Use DTOs for data transfer
 
 2. **Configuration**:
-    - Use `application.yml` over `application.properties`
-    - Leverage profiles for different environments
-    - Externalize configuration values
+   - Use `application.yml` over `application.properties`
+   - Leverage profiles for different environments
+   - Externalize configuration values
 
 3. **Security**:
-    - Always implement proper authentication/authorization
-    - Use HTTPS in production
-    - Validate and sanitize all inputs
-    - Keep dependencies updated
+   - Always implement proper authentication/authorization
+   - Use HTTPS in production
+   - Validate and sanitize all inputs
+   - Keep dependencies updated
 
 4. **Testing**:
-    - Write comprehensive unit and integration tests
-    - Use `@MockBean` for Spring Boot test slices
-    - Test with real database using TestContainers
-    - Maintain good test coverage
+   - Write comprehensive unit and integration tests
+   - Use `@MockBean` for Spring Boot test slices
+   - Test with real database using TestContainers
+   - Maintain good test coverage
 
 5. **Production Readiness**:
-    - Enable Actuator for monitoring
-    - Implement proper logging strategy
-    - Use connection pooling for database
-    - Configure appropriate timeouts
-    - Implement graceful shutdown
+   - Enable Actuator for monitoring
+   - Implement proper logging strategy
+   - Use connection pooling for database
+   - Configure appropriate timeouts
+   - Implement graceful shutdown
 
 ### Performance Optimization
 
 1. **Database**:
-    - Use connection pooling (HikariCP)
-    - Implement proper indexing
-    - Use pagination for large datasets
-    - Optimize queries with proper fetch strategies
+   - Use connection pooling (HikariCP)
+   - Implement proper indexing
+   - Use pagination for large datasets
+   - Optimize queries with proper fetch strategies
 
 2. **Caching**:
-    - Implement caching at appropriate layers
-    - Use Redis for distributed caching
-    - Cache expensive operations
-    - Implement cache eviction strategies
+   - Implement caching at appropriate layers
+   - Use Redis for distributed caching
+   - Cache expensive operations
+   - Implement cache eviction strategies
 
 3. **Web Layer**:
-    - Use compression for responses
-    - Implement proper HTTP caching
-    - Optimize JSON serialization
-    - Use async processing for long operations
+   - Use compression for responses
+   - Implement proper HTTP caching
+   - Optimize JSON serialization
+   - Use async processing for long operations
 
 ---
 

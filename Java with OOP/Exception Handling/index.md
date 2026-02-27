@@ -75,12 +75,6 @@ flowchart TD
     C --> G[Errors]
     F --> H[Recoverable]
     G --> I[Non-recoverable]
-
-    style A fill:#e1f5fe
-    style F fill:#c8e6c9
-    style G fill:#ffcdd2
-    style H fill:#a5d6a7
-    style I fill:#ef9a9a
 ```
 
 </div>
@@ -507,12 +501,6 @@ flowchart TD
     F --> G
     G --> H[Continue with rest of program]
     H --> I[End]
-
-    style A fill:#c8e6c9
-    style I fill:#c8e6c9
-    style C fill:#fff3e0
-    style E fill:#ffcdd2
-    style G fill:#e1f5fe
 ```
 
 </div>
@@ -640,9 +628,6 @@ flowchart TD
     C --> F[Execute finally block]
     E --> F
     F --> G[Continue program]
-
-    style F fill:#e8f5e8
-    style G fill:#f0f8ff
 ```
 
 </div>
@@ -1028,13 +1013,6 @@ flowchart TD
     M --> O{"main() handles it?"}
     O -->|No| P["💥 Program terminates"]
     O -->|Yes| Q["Exception handled"]
-
-    style E fill:#ffcdd2
-    style P fill:#f44336
-    style H fill:#c8e6c9
-    style K fill:#c8e6c9
-    style N fill:#c8e6c9
-    style Q fill:#c8e6c9
 ```
 
 </div>
@@ -2574,11 +2552,6 @@ flowchart TD
     D --> F[Optional to handle]
     E --> G[Good for APIs and libraries]
     F --> H[Good for validation and preconditions]
-
-    style C fill:#fff3e0
-    style D fill:#fce4ec
-    style E fill:#e8f5e8
-    style F fill:#ffebee
 ```
 
 </div>
@@ -2604,10 +2577,6 @@ flowchart LR
     E --> G["IOException<br/>SQLException<br/>Custom Business Exceptions"]
     F --> H["IllegalArgumentException<br/>IllegalStateException<br/>Custom Validation Exceptions"]
     D --> I["NullPointerException<br/>ClassCastException<br/>Custom Runtime Exceptions"]
-
-    style E fill:#c8e6c9
-    style F fill:#ffcdd2
-    style D fill:#ffcdd2
 ```
 
 #### 🏆 **Exception Handling Maturity Model**
@@ -2645,11 +2614,6 @@ flowchart TD
     C --> E["Extend RuntimeException class"]
     D --> F["Must be handled or declared"]
     E --> G["Optional to handle"]
-
-    style B fill:#fff3e0
-    style C fill:#fce4ec
-    style D fill:#e8f5e8
-    style E fill:#ffebee
 ```
 
 </div>

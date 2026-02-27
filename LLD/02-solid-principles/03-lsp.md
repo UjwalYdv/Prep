@@ -1170,5 +1170,3 @@ The Liskov Substitution Principle ensures that inheritance hierarchies are **log
 Remember: **Subclasses should be substitutable for their parent classes without altering program correctness!**
 
 The key is to ensure that inheritance represents a true "is-a" relationship with consistent behavior, not just code reuse. When in doubt, favor composition over inheritance.
-
----

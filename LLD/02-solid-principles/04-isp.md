@@ -20,7 +20,6 @@ The Interface Segregation Principle states that **no client should be forced to 
 ### Key Concepts
 
 ```mermaid
-%%{init:{'theme' : 'default'}}%%
 flowchart TD
     A((ISP))
     A --> B[Segregation]
@@ -1367,5 +1366,3 @@ The Interface Segregation Principle promotes **focused, client-specific interfac
 Remember: **Many small, focused interfaces are better than one large, fat interface!**
 
 The key is to design interfaces from the client's perspective, grouping methods that clients actually use together. This leads to more maintainable and flexible code that's easier to understand and test.
-
----

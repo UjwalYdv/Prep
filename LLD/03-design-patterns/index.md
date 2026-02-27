@@ -20,7 +20,6 @@ Design patterns are reusable solutions to common problems in software design. Th
 ## 📚 Pattern Categories
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 mindmap
   root((Design Patterns))
     Creational
@@ -68,7 +67,6 @@ mindmap
 ### Creational Patterns Overview
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 graph TD
     A[Object Creation Need] --> B{Complexity?}
     B -->|Simple| C[Factory Method]
@@ -95,7 +93,6 @@ graph TD
 ### Structural Patterns Overview
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 graph TD
     A[Structure Problem] --> B{Type?}
     B -->|Interface Mismatch| C[Adapter]
@@ -127,7 +124,6 @@ graph TD
 ### Behavioral Patterns Overview
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 graph TD
     A[Behavior Problem] --> B{Type?}
     B -->|Notification| C[Observer]
@@ -151,7 +147,6 @@ graph TD
 <div align = "center">
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 flowchart TD
     A[Need to Create Objects] --> B{How many instances?}
     B -->|Exactly One| C[Singleton]
@@ -167,7 +162,6 @@ flowchart TD
 #### Structural Problems
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 flowchart TD
     A[Structural Issue] --> B{What's the problem?}
     B -->|Incompatible Interfaces| C[Adapter]
@@ -182,7 +176,6 @@ flowchart TD
 #### Behavioral Problems
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 flowchart TD
     A[Behavior Issue] --> B{What's needed?}
     B -->|Notify Multiple Objects| C[Observer]
@@ -282,7 +275,6 @@ flowchart TD
 ## 🔗 Pattern Relationships
 
 ```mermaid
-%%{init: {'theme': 'default'}}%%
 graph TB
     subgraph "Often Used Together"
         A[Observer] --> B[Command]
@@ -301,14 +293,14 @@ graph TB
 ## 📚 Further Reading
 
 - **Books**:
-    - "Design Patterns: Elements of Reusable Object-Oriented Software" by Gang of Four
-    - "Head First Design Patterns" by Freeman & Robson
-    - "Patterns of Enterprise Application Architecture" by Martin Fowler
+  - "Design Patterns: Elements of Reusable Object-Oriented Software" by Gang of Four
+  - "Head First Design Patterns" by Freeman & Robson
+  - "Patterns of Enterprise Application Architecture" by Martin Fowler
 
 - **Online Resources**:
-    - Refactoring.Guru Design Patterns
-    - SourceMaking Design Patterns
-    - DoFactory Design Pattern Framework
+  - Refactoring.Guru Design Patterns
+  - SourceMaking Design Patterns
+  - DoFactory Design Pattern Framework
 
 ## 🎯 Quick Reference
 

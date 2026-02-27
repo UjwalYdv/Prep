@@ -432,7 +432,6 @@ public:
 ## 🏗️ Class Diagram After OCP
 
 ```mermaid
-%%{init: {'theme': 'default', 'themeVariables': { 'fontSize': '20px', 'lineHeight': '24px', 'nodeSpacing': 50, 'rankSpacing': 80 }}}%%
 classDiagram
     class DiscountStrategy {
         <<interface>>

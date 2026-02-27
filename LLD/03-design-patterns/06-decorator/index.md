@@ -142,12 +142,6 @@ graph LR
     DecoratorC -.->|enhanced response| DecoratorB
     DecoratorB -.->|enhanced response| DecoratorA
     DecoratorA -.->|final response| Client
-
-    style Client fill:#e1f5fe
-    style ConcreteComponent fill:#c8e6c9
-    style DecoratorA fill:#fff3e0
-    style DecoratorB fill:#fce4ec
-    style DecoratorC fill:#f3e5f5
 ```
 
 ## 💻 Implementation
@@ -1172,9 +1166,6 @@ graph TD
     B --> B1["❌ Static behavior at compile time<br/>❌ Class explosion problem<br/>❌ Tight coupling<br/>✅ Simple to understand"]
 
     C --> C1["✅ Dynamic behavior at runtime<br/>✅ Flexible composition<br/>✅ Loose coupling<br/>❌ More complex structure"]
-
-    style B1 fill:#fce4ec
-    style C1 fill:#e8f5e8
 ```
 
 ### 🔄 Decorator Composition Patterns
@@ -1188,11 +1179,6 @@ flowchart TD
     B --> B1[Simple wrapper<br/>One responsibility]
     C --> C1[Multiple decorators<br/>Order matters]
     D --> D1[Runtime decoration<br/>Based on conditions]
-
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#fff3e0
-    style D fill:#e8f5e8
 ```
 
 ## ❌ Common Pitfalls

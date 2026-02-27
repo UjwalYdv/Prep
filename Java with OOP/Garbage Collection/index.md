@@ -152,12 +152,12 @@ The allocation failed, the value of failed_malloc is: (nil)
 - Even though programmer is not responsible to destroy useless objects, it is highly recommended to make an object eligible for GC if it is not longer required.
 - An Object is said to be eligible for GC if and only if it does not contain any reference variable.
 - The following are the various ways to make an object eligible for GC :
-    - Nullifying the reference variable:
-        - if an object is no longer required then assign null to all its reference variables then that object is automatically eligible for GC. This approach is nothing but nullifying the reference variable. Shown in example above.
-    - Reassigning the reference variable :
-        - if an object is no longer required then reassign its reference variable to some other object then old object will be eligible for GC(Garbage Collection).
-    - The Objects which are created inside a method are by default eligible for GC once a method completes.
-    - Island of isolation :
+  - Nullifying the reference variable:
+    - if an object is no longer required then assign null to all its reference variables then that object is automatically eligible for GC. This approach is nothing but nullifying the reference variable. Shown in example above.
+  - Reassigning the reference variable :
+    - if an object is no longer required then reassign its reference variable to some other object then old object will be eligible for GC(Garbage Collection).
+  - The Objects which are created inside a method are by default eligible for GC once a method completes.
+  - Island of isolation :
 
 ```java
 // Java Program to Illustrate Island of Isolation
@@ -209,17 +209,17 @@ public class Test {
 - Once we made an object eligible for GC it may not be destroyed immediately by garbage collector, whenever JVM runs GC then only the objects will be destroyed but when exactly JVM runs garbage collector, we can't expect it is varied from JVM to JVM.
 - Instead of waiting until JVM runs GC we can request JVM to run GC programmatically but whether JVM accept our request or not there is not guarantee but most of the times JVM accept our request.
 - The following are two ways for requesting JVM to run GC:
-    - **By using system call** :
-        - System class contains a static method called gc() for this purpose `System.gc()`.
-    - **By using Runtime class** :
-        - Java application can communicate with JVM by using Runtime Object.
-        - Runtime class present in java.lang package and it is a **singleton class**.
-        - We can create Runtime object by using Runtime.getRuntime() method.
-        - `Runtime r = Runtime.getRuntime();`
-        - Once we got runtime object we can call the following methods on that object :
-            - **Total Memory** : `r.totalMemory()` --> it return number of bytes of total memory present in the heap(i.e Heap Size)
-            - **Free Memory** : `r.freeMemory()` --> it return number of bytes of free memory present in the heap(i.e Heap Size)
-            - **gc** : `r.gc()` --> it will trigger garbage collection.
+  - **By using system call** :
+    - System class contains a static method called gc() for this purpose `System.gc()`.
+  - **By using Runtime class** :
+    - Java application can communicate with JVM by using Runtime Object.
+    - Runtime class present in java.lang package and it is a **singleton class**.
+    - We can create Runtime object by using Runtime.getRuntime() method.
+    - `Runtime r = Runtime.getRuntime();`
+    - Once we got runtime object we can call the following methods on that object :
+      - **Total Memory** : `r.totalMemory()` --> it return number of bytes of total memory present in the heap(i.e Heap Size)
+      - **Free Memory** : `r.freeMemory()` --> it return number of bytes of free memory present in the heap(i.e Heap Size)
+      - **gc** : `r.gc()` --> it will trigger garbage collection.
 
 ```java
 //Runtime example
@@ -251,9 +251,9 @@ class System {
 - Once a `finalize()` method completes garbage collector autommatically destroys that object.
 - `finalize()` method present in object class with the following declaration.
 
-    ```java
-    protected void finalize() throws Throwable {}
-    ```
+  ```java
+  protected void finalize() throws Throwable {}
+  ```
 
 - we can override finalize method in our class to define our own clean up activities.
 
@@ -372,11 +372,11 @@ public class Test {
 > case 4
 
 - We can't expect exact behaviour of garbage collector, it is varied from **JVM to JVM** hence for the following questions we can't answer exact answers :
-    - When exactly JVM runs garbage collector ?
-    - In which order garbage collector identifies eligible objects ?
-    - In which order garbage collector destroys eligible objects ?
-    - Whether garbage collector destroys all eligible objects or not ?
-    - What ist he algorithm followed by garbage collector ? etc.
+  - When exactly JVM runs garbage collector ?
+  - In which order garbage collector identifies eligible objects ?
+  - In which order garbage collector destroys eligible objects ?
+  - Whether garbage collector destroys all eligible objects or not ?
+  - What ist he algorithm followed by garbage collector ? etc.
 
 > Note :
 
@@ -388,16 +388,16 @@ public class Test {
 - When we don't make an object eligible for GC or when no object is by somehow not eligible for GC, after some time the JVM will send gc to do its job as the memory will be almost full after some time but the GC will not be able to destroy any object in that case when after some time when JVM encounters the same error the JVM will give left and right to garbage collector.
 
 - **Memory Leaks** :
-    - The objects which are not used in our program and which are not eligible for GC, such type of useless objects are called Memory Leaks.
-    - In our program if memory leaks is present then the program will be terminated by rising **outOfMemoryError**
-    - Hence if an object is no longer required, it is highly recommended to make that object eligible for GC.
+  - The objects which are not used in our program and which are not eligible for GC, such type of useless objects are called Memory Leaks.
+  - In our program if memory leaks is present then the program will be terminated by rising **outOfMemoryError**
+  - Hence if an object is no longer required, it is highly recommended to make that object eligible for GC.
 
 - The following are various third-party tools to identify memory leaks :
-    - **HP OVO**
-    - **HP J Meter**
-    - **JProbe**
-    - **Patrol**
-    - **IBM Tivoli**
+  - **HP OVO**
+  - **HP J Meter**
+  - **JProbe**
+  - **Patrol**
+  - **IBM Tivoli**
 
 ## 🏗️ Memory Management in Java
 
@@ -419,10 +419,6 @@ graph TB
     C --> J[Method Area]
     C --> K[Code Cache]
     C --> L[Direct Memory]
-
-    style B fill:#e1f5fe
-    style D fill:#f3e5f5
-    style E fill:#fff3e0
 ```
 
 ### 🎨 Memory Areas Explained
@@ -463,12 +459,6 @@ graph TB
     B -->|Minor GC| C
     C -->|Promotion| D
     D -->|Major GC| D
-
-    style A fill:#ffcdd2
-    style B fill:#fff3e0
-    style C fill:#fff3e0
-    style D fill:#e8f5e8
-    style E fill:#f3e5f5
 ```
 
 ### 📊 Memory Allocation Flow
@@ -513,11 +503,6 @@ graph TD
     D --> H[GC'd in next GC cycle<br/>if no strong references]
     E --> I[GC'd when memory pressure<br/>Good for caches]
     F --> J[Used for cleanup actions<br/>After object is GC'd]
-
-    style B fill:#ffcdd2
-    style D fill:#fff3e0
-    style E fill:#e8f5e8
-    style F fill:#f3e5f5
 ```
 
 ### 💡 Reference Examples
@@ -576,8 +561,6 @@ graph TD
     D --> I[Native method references]
     E --> J[Active thread objects]
     F --> K[Bootstrap class loader objects]
-
-    style A fill:#ffcdd2
 ```
 
 ### 🔄 Mark and Sweep Algorithm
@@ -596,11 +579,6 @@ flowchart TD
     H --> I[Move objects to reduce fragmentation]
     I --> J[Update references]
     J --> K[GC Complete]
-
-    style B fill:#e3f2fd
-    style E fill:#f3e5f5
-    style H fill:#e8f5e8
-
 ````
 </div>
 
@@ -636,7 +614,7 @@ class Node {
 
     Node(String data) { this.data = data; }
 }
-````
+```
 
 ---
 
@@ -657,12 +635,6 @@ graph TB
     D --> D1[Low latency<br/>Large heaps<br/>-XX:+UseG1GC]
     E --> E1[Ultra-low latency<br/>Very large heaps<br/>-XX:+UseZGC]
     F --> F1[Low pause times<br/>Concurrent collection<br/>-XX:+UseShenandoahGC]
-
-    style B fill:#ffcdd2
-    style C fill:#fff3e0
-    style D fill:#e8f5e8
-    style E fill:#e1f5fe
-    style F fill:#f3e5f5
 ```
 
 ### 📊 Algorithm Performance Characteristics
@@ -721,10 +693,6 @@ graph LR
     G --> H{Application Reference?}
     H -->|No| I[Major GC]
     H -->|Yes| J[Remains in Old Gen]
-
-    style B fill:#ffcdd2
-    style E fill:#fff3e0
-    style G fill:#e8f5e8
 ```
 
 ### 🔄 Minor vs Major GC
@@ -749,9 +717,6 @@ flowchart TB
 
   A1 --> A2 --> A3 --> A4 --> A5
   B1 --> B2 --> B3 --> B4 --> B5
-
-  style A1 fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-  style B1 fill:#ffcdd2,stroke:#c62828,stroke-width:2px
 ```
 
 ### 📈 Object Lifecycle Example
@@ -808,11 +773,6 @@ graph TB
     C --> C1[-XX:NewSize: Young generation size<br/>-XX:SurvivorRatio: Eden/Survivor ratio<br/>-XX:MaxTenuringThreshold: Promotion age]
     D --> D1[-XX:+UseG1GC: Enable G1<br/>-XX:MaxGCPauseMillis: Target pause<br/>-XX:GCTimeRatio: Throughput goal]
     E --> E1[-XX:+PrintGC: Basic GC logging<br/>-XX:+PrintGCDetails: Detailed logs<br/>-Xloggc: Log file location]
-
-    style B fill:#e8f5e8
-    style C fill:#fff3e0
-    style D fill:#e1f5fe
-    style E fill:#f3e5f5
 ```
 
 ### 📊 Common Tuning Scenarios
@@ -925,10 +885,6 @@ graph TB
     B --> B1[jstat - GC statistics<br/>jmap - Heap dumps<br/>jcmd - Diagnostic commands<br/>VisualVM - GUI monitoring]
     C --> C1[GCViewer - Log analysis<br/>Eclipse MAT - Memory analysis<br/>JProfiler - Profiling<br/>AppDynamics - APM]
     D --> D1[Micrometer - Metrics<br/>Prometheus - Monitoring<br/>Grafana - Visualization<br/>Custom logging]
-
-    style B fill:#e8f5e8
-    style C fill:#fff3e0
-    style D fill:#e1f5fe
 ```
 
 ### 📊 Key GC Metrics
@@ -1164,12 +1120,6 @@ graph TB
     C --> C1[Adding listeners without<br/>removing them]
     D --> D1[Creating threads without<br/>proper cleanup]
     E --> E1[Not closing streams,<br/>connections, files]
-
-    style A fill:#ffcdd2
-    style B fill:#fff3e0
-    style C fill:#fff3e0
-    style D fill:#fff3e0
-    style E fill:#fff3e0
 ```
 
 ### 🐛 Memory Leak Examples and Fixes
@@ -1373,9 +1323,6 @@ graph LR
 
     B1 --> B2[Best for: Very large heaps<br/>Real-time applications]
     C1 --> C2[Best for: Interactive applications<br/>Consistent latency]
-
-    style B fill:#e1f5fe
-    style C fill:#f3e5f5
 ```
 
 ---
@@ -1406,12 +1353,3 @@ graph LR
 - [Oracle JVM Tuning Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/)
 - [G1GC Deep Dive](https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html)
 - [GC Algorithms Comparison](https://blog.gceasy.io/2020/03/25/jvm-garbage-collection-algorithms/)
-
----
-
-<div align = "center">
-_Created with ❤️ for Java developers who want to master Garbage Collection_
-
-> 💡 **Pro Tip**: Start with default GC settings and only optimize when you have clear performance requirements and measurement data!
-
-</div>

@@ -1490,5 +1490,3 @@ The key techniques for implementing DIP are:
 - **Configuration**: Centralize dependency setup
 
 DIP is the foundation that makes all other SOLID principles work together effectively, creating a flexible and maintainable codebase.
-
----

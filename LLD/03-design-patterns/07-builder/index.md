@@ -761,12 +761,6 @@ flowchart TD
     C --> C1[Separate director controls process]
     D --> D1[Method chaining for readability]
     E --> E1[Multiple build methods for variations]
-
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#fff3e0
-    style D fill:#e8f5e8
-    style E fill:#fce4ec
 ```
 
 ## ❌ Common Pitfalls
