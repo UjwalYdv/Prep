@@ -2,7 +2,7 @@
 
 **Type:** On-Campus Opportunity  
 **Role:** Associate Software Development Engineer (ASDE) Intern  
-**Company:** Publicis Sapient  
+**Company:** Publicis Sapient
 
 ---
 
@@ -11,18 +11,21 @@
 The first round was an **online coding assessment**.
 
 ### 🔍 Round Details
-- **Total Questions:** 3  
+
+- **Total Questions:** 3
 - Difficulty: **Easy to Medium**
 - Based on standard **DSA concepts**
 - Required clear logic and correct implementation
 
 ### 📌 Performance
+
 - Solved **2 out of 3 questions completely**
 - Shortlisted for the **Technical Interview**
 
-**References:**  
-- https://leetcode.com/problemset/all/  
-- https://www.geeksforgeeks.org/data-structures/
+**References:**
+
+- [Leetcode](https://leetcode.com/problemset/all/)
+- [DSA - GFG](https://www.geeksforgeeks.org/data-structures/)
 
 ---
 
@@ -31,26 +34,29 @@ The first round was an **online coding assessment**.
 The technical interview focused on **core CS fundamentals** and **real-world problem solving**.
 
 ### 🔍 Subjects Covered
-- Software Engineering  
-- Computer Networks  
-- Operating Systems  
-- DBMS  
-- OOPS  
+
+- Software Engineering
+- Computer Networks
+- Operating Systems
+- DBMS
+- OOPS
 
 ---
 
 ### 🧠 Key Questions Asked
 
 - **What happens when we type a URL like `www.xyz.com` in a browser?**  
-  **Reference:** https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/
+  **Reference:**
+- [DNS - GFG](https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/)
 
 - **What happens if multiple users perform transactions on the same bank account simultaneously?**  
-  **References:**  
-  - https://www.geeksforgeeks.org/operating-systems/  
-  - https://www.geeksforgeeks.org/transaction-in-dbms/
+  **References:**
+  - [Operating System - GFG](https://www.geeksforgeeks.org/operating-systems/)
+  - [Transaction in DBMS - GFG](https://www.geeksforgeeks.org/transaction-in-dbms/)
 
 - **How would you select the most optimal route from source to destination?**  
-  **Reference:** https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/
+  **Reference:**
+- [Graph Algorithms - GFG](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
 
 - **How would you design a software solution for Publicis Sapient to coordinate directly with eligible students (without a placement cell)?**
 
@@ -67,8 +73,8 @@ However, the interview was a strong learning experience and clearly highlighted 
 
 ## 💡 Advice for Others
 
-- Strengthen **DBMS and OS basics** before the interview  
-- Learn at least **fundamentals of Computer Networks**  
+- Strengthen **DBMS and OS basics** before the interview
+- Learn at least **fundamentals of Computer Networks**
 - Do not rely only on DSA — **system concepts matter**
 - Practice explaining answers with **real-world scenarios**
 
@@ -80,16 +86,16 @@ However, the interview was a strong learning experience and clearly highlighted 
 
 ---
 
-**🗒️ Shared by:** Anonymous  
+**🗒️ Shared by:** Anonymous
 
 ---
 
 ## 🔗 Reference Links
 
-- https://www.publicissapient.com/  
-- https://leetcode.com/problemset/all/  
-- https://www.geeksforgeeks.org/data-structures/  
-- https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/  
-- https://www.geeksforgeeks.org/operating-systems/  
-- https://www.geeksforgeeks.org/transaction-in-dbms/  
-- https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/  
+- [Publicis Sapient](https://www.publicissapient.com/)
+- [Leetcode](https://leetcode.com/problemset/all/)
+- [DSA - GFG](https://www.geeksforgeeks.org/data-structures/)
+- [DNS - GFG](https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/)
+- [Operating System - GFG](https://www.geeksforgeeks.org/operating-systems/)
+- [Transaction in DBMS - GFG](https://www.geeksforgeeks.org/transaction-in-dbms/)
+- [Graph Algorithms - GFG](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)

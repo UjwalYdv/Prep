@@ -19,16 +19,18 @@ Designed an **autocomplete-like system** to provide product suggestions as a use
 For every character typed, the system returned **up to three product names** that start with the current prefix, **lexicographically sorted**, and updated dynamically with each new character.
 
 **Key Requirements:**
-- Return **at most three suggestions** for each prefix  
-- Suggestions must be **lexicographically sorted**  
+
+- Return **at most three suggestions** for each prefix
+- Suggestions must be **lexicographically sorted**
 - Efficient handling for **large product lists**
 
 **Topics Covered:**  
 Strings · Sorting · Prefix Matching · Binary Search · Trie (optional)
 
 Reference:
-- https://leetcode.com/problems/search-suggestions-system/
-- https://www.geeksforgeeks.org/trie-insert-and-search/
+
+- [Search Suggestions System - Leetcode](https://leetcode.com/problems/search-suggestions-system/)
+- [Trie - GFG](https://www.geeksforgeeks.org/trie-insert-and-search/)
 
 ---
 
@@ -39,22 +41,25 @@ Simulated the behavior of a **Horizontal Pod Autoscaler (HPA)** across multiple 
 Each service had a number of running pods, and multiple scaling events were applied.
 
 **Types of Events:**
-- **Targeted Update:** Update pod count of a specific service  
-- **Bulk Update:** Increase pod counts for all services below a given threshold  
+
+- **Targeted Update:** Update pod count of a specific service
+- **Bulk Update:** Increase pod counts for all services below a given threshold
 
 The main challenge was to apply these updates **efficiently without iterating over the entire array repeatedly**.
 
 **Key Requirements:**
-- Efficient single-service updates  
-- Optimized handling of threshold-based bulk updates  
+
+- Efficient single-service updates
+- Optimized handling of threshold-based bulk updates
 - Output final pod counts after all events
 
 **Topics Covered:**  
 Arrays · Simulation · Optimization · Efficient Updates · Range Updates
 
 Reference:
-- https://www.geeksforgeeks.org/range-update-and-point-query/
-- https://leetcode.com/problems/range-addition/
+
+- [Binary Indexed Tree - GFG](https://www.geeksforgeeks.org/dsa/binary-indexed-tree-range-updates-point-queries/)
+- [Range Addition - Leetcode](https://leetcode.com/problems/range-addition/)
 
 ---
 
@@ -67,6 +72,7 @@ Reference:
 **Duration:** ~45 minutes
 
 ### 🔍 Introduction
+
 This round focused on **algorithmic thinking, data structures, and clean coding practices**.  
 The interviewer emphasized writing **readable, modular, and maintainable code**, rather than just solving the problem.
 
@@ -79,12 +85,14 @@ Given a list of words, a word **A** can connect to word **B** if adding **exactl
 The task was to find the **length of the longest possible word chain**.
 
 **Key Requirements:**
+
 - Use **dynamic programming** or **hash-based memoization**
 - Process words in **increasing order of length**
 - Ensure **clean, class-based design**
 - Separate logic from input/output
 
 **Suggested Approach:**
+
 - Sort words by length
 - Use a map to store the longest chain ending at each word
 - For each word, remove one character at every position and check previous chain length
@@ -93,8 +101,8 @@ The task was to find the **length of the longest possible word chain**.
 Strings · Dynamic Programming · Hashing · Greedy Optimization · Class-Based Design
 
 Reference:
-- https://leetcode.com/problems/longest-string-chain/
-- https://www.geeksforgeeks.org/longest-string-chain/
+
+- [Longest String Chain - Leetcode](https://leetcode.com/problems/longest-string-chain/)
 
 ---
 
@@ -105,22 +113,25 @@ Reference:
 ## 👨‍💼 Round 3 – Managerial / HR Interview
 
 ### 🔍 Introduction
+
 This round assessed **behavioral skills, leadership potential, and cultural fit**.  
 The discussion was conversational but deep.
 
 ---
 
 ### 🗂️ Key Discussion Areas
-- **Resume Deep Dive:** Education, internships, experiences  
-- **Projects:** Role, contributions, challenges, and impact  
-- **Positions of Responsibility (PORs):** Leadership and teamwork  
-- **Behavioral Questions:**  
-  - Conflict resolution  
-  - Decision-making  
-  - Handling failures  
-  - Collaboration and teamwork  
+
+- **Resume Deep Dive:** Education, internships, experiences
+- **Projects:** Role, contributions, challenges, and impact
+- **Positions of Responsibility (PORs):** Leadership and teamwork
+- **Behavioral Questions:**
+  - Conflict resolution
+  - Decision-making
+  - Handling failures
+  - Collaboration and teamwork
 
 ### 💡 Tips for HR Rounds
+
 - Know your resume **thoroughly**
 - Be clear about **your individual contributions**
 - Prepare examples for leadership and conflict scenarios
@@ -160,15 +171,14 @@ However, it was a **valuable and encouraging start** to my interview journey.
 
 ---
 
-**🗒️ Shared by:** Anonymous  
+**🗒️ Shared by:** Anonymous
 
 ---
 
 ## 🔗 Reference Links
-- https://www.atlassian.com/company/careers
-- https://leetcode.com/problems/search-suggestions-system/
-- https://leetcode.com/problems/longest-string-chain/
-- https://www.geeksforgeeks.org/trie-insert-and-search/
-- https://www.geeksforgeeks.org/longest-string-chain/
-- https://www.geeksforgeeks.org/range-update-and-point-query/
-- https://leetcode.com/problems/range-addition/
+
+- [Atlassian Careers](https://www.atlassian.com/company/careers)
+- [Search Suggestions System - Leetcode](https://leetcode.com/problems/search-suggestions-system/)
+- [Longest String Chain - Leetcode](https://leetcode.com/problems/longest-string-chain/)
+- [Binary Indexed Tree - GFG](https://www.geeksforgeeks.org/dsa/binary-indexed-tree-range-updates-point-queries/)
+- [Range Addition - Leetcode](https://leetcode.com/problems/range-addition/)

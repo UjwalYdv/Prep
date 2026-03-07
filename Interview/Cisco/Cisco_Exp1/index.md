@@ -10,6 +10,7 @@
 ## 🕶️ Blind Hiring Process (Unique Aspect)
 
 Cisco followed a **blind interview process** where:
+
 - Candidates were identified only by a **Candidate ID**
 - ❌ No name, college, branch, CGPA, or clubs were disclosed
 - Evaluation was purely based on **skills, thinking ability, and communication**
@@ -18,9 +19,10 @@ Cisco followed a **blind interview process** where:
 
 ## 🧪 Round 1 – Technical Interview
 
-**Duration:** ~45 minutes  
+**Duration:** ~45 minutes
 
 ### 🔍 Interview Flow
+
 - Very brief introduction **without revealing personal details**
 - Questions focused on **core CS fundamentals and problem-solving**
 
@@ -28,36 +30,37 @@ Cisco followed a **blind interview process** where:
 
 ### 🧩 Coding Question
 
-**Question (as asked):**  
+**Question (as asked):**
+
 > Write a program to identify number of repeated characters in the same word.
 
-**Actual Requirement:**  
+**Actual Requirement:**
+
 - Given a sentence, print the **words that contain at least one repeated character**
 
 🧠 This tested **string manipulation, edge cases, and clarity of interpretation**.
 
-Reference:
-- https://www.geeksforgeeks.org/print-words-string-contain-repeated-characters/
-
 ---
 
 ### ⚙️ Core CS Questions
+
 - How does an **Operating System** work?  
-  Reference: https://www.geeksforgeeks.org/operating-system-introduction/
+  Reference: [GFG](https://www.geeksforgeeks.org/operating-systems/introduction-of-operating-system-set-1/)
 - What happens when you **switch on a computer**?  
-  Reference: https://www.geeksforgeeks.org/booting-process-in-operating-system/
+  Reference: [GFG](https://www.geeksforgeeks.org/operating-systems/what-happens-when-we-turn-on-computer/)
 - What is **Deadlock**?  
-  Reference: https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/
+  Reference: [DeadLock - GFG](https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/)
 - How can deadlock be **prevented**?
 - Explain **Banker’s Algorithm**  
-  Reference: https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system/
+  Reference: [Banker’s Algorithm - GFG](https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system/)
 - What is **TCP/IP protocol**?  
-  Reference: https://www.geeksforgeeks.org/tcp-ip-model/
+  Reference: [TCP/IP - GFG](https://www.geeksforgeeks.org/tcp-ip-model/)
 - What is **HTTP protocol**?  
-  Reference: https://www.geeksforgeeks.org/blogs/http-full-form/
+  Reference: [HTTP Protocol - GFG](https://www.geeksforgeeks.org/blogs/http-full-form/)
 
 Ended with:
-> *Do you want to ask me anything?*
+
+> _Do you want to ask me anything?_
 
 ✅ **Outcome:** Cleared Round 1
 
@@ -65,55 +68,59 @@ Ended with:
 
 ## 🧪 Round 2 – Technical (Project + Development Deep Dive)
 
-**Duration:** ~1 hour  
+**Duration:** ~1 hour
 
 This round focused heavily on **project implementation decisions**, not buzzwords.
 
 ---
 
 ### 🗂️ Web & Backend Concepts
+
 - How do you **authenticate a user**?
 - Why did you use **MongoDB**?  
-  Reference: https://www.geeksforgeeks.org/mongodb-an-introduction/
+  Reference: [MongoDB - GFG](https://www.geeksforgeeks.org/mongodb-an-introduction/)
 - Are **MongoDB schemas mutable**?
 - How to add a **new key to existing documents**?
 - What is an **API**?  
-  Reference: https://www.geeksforgeeks.org/api-introduction/
+  Reference: [API - GFG](https://www.geeksforgeeks.org/software-testing/what-is-an-api/)
 - How does API add **security**?
 - What is a **REST API**?  
-  Reference: https://www.geeksforgeeks.org/rest-api-introduction/
+  Reference: [REST API - GFG](https://www.geeksforgeeks.org/node-js/rest-api-introduction/)
 - Difference between **POST, PUT, PATCH**  
-  Reference: https://www.geeksforgeeks.org/difference-between-put-and-post-request/
+  Reference: [GFG](https://www.geeksforgeeks.org/java/what-is-the-difference-between-put-post-and-patch-in-restful-api/)
 - Layers of **OSI Model**  
-  Reference: https://www.geeksforgeeks.org/layers-of-osi-model/
+  Reference: [OSI Model - GFG](https://www.geeksforgeeks.org/layers-of-osi-model/)
 - What is **HTTPS**? What does **S** stand for?  
-  Reference: https://www.geeksforgeeks.org/https-full-form/
+  Reference: [GFG](https://www.geeksforgeeks.org/https-full-form/)
 - What is an **SSL Certificate**? Who provides it?  
-  Reference: https://www.geeksforgeeks.org/ssl-secure-sockets-layer/
+  Reference: [SSL - GFG](https://www.geeksforgeeks.org/computer-networks/secure-socket-layer-ssl/)
 
 ---
 
 ### 🗄️ System & Performance Concepts
+
 - **Database Scaling** and **CAP Theorem**  
-  Reference: https://www.geeksforgeeks.org/cap-theorem-in-distributed-systems/
+  Reference: [Cap Theorem - GFG](https://www.geeksforgeeks.org/system-design/cap-theorem-in-system-design/)
 - What is **Paging**?  
-  Reference: https://www.geeksforgeeks.org/paging-in-operating-system/
+  Reference: [Paging - GFG](https://www.geeksforgeeks.org/paging-in-operating-system/)
 - What is **Caching**?
 - Types of **Cache**
 - **LRU Cache implementation** using stack / queue  
-  Reference: https://www.geeksforgeeks.org/lru-cache-implementation/
+  Reference: [LRU Cache - GFG](https://www.geeksforgeeks.org/lru-cache-implementation/)
 
 ---
 
 ### 🧠 Puzzle (Protocol-Based)
+
 Secure suitcase transfer using **locks and keys**, without sharing keys.
 
 ---
 
 ### 💾 Storage
-- How **disk drives** work  
+
+- How **disk drives** work
 - Difference between **HDD and SSD**  
-  Reference: https://www.geeksforgeeks.org/difference-between-hdd-and-ssd/
+  Reference: [GFG](https://www.geeksforgeeks.org/computer-organization-architecture/difference-between-hard-disk-drive-hdd-and-solid-state-drive-ssd/)
 
 ✅ **Outcome:** Cleared Round 2
 
@@ -121,32 +128,35 @@ Secure suitcase transfer using **locks and keys**, without sharing keys.
 
 ## 🧠 Round 3 – Managerial / Personality Round
 
-**Duration:** ~30 minutes  
+**Duration:** ~30 minutes
 
 ### 🔍 Discussion Topics
+
 - Cisco **products** and how a **router works**  
   Reference: https://www.geeksforgeeks.org/router-in-computer-network/
 - Which **OS does Cisco use** (Cisco IOS vs Apple iOS)
 - How do you stay updated with **latest technologies**?
 - Cloud tools: **Docker, Kubernetes, Kafka**  
-  References:  
-  - https://www.geeksforgeeks.org/docker-tutorial/  
-  - https://www.geeksforgeeks.org/kubernetes-tutorial/  
-  - https://www.geeksforgeeks.org/apache-kafka/
+  References:
+  - [Docker - GFG](https://www.geeksforgeeks.org/docker-tutorial/)
+  - [Kubernetes - GFG](https://www.geeksforgeeks.org/kubernetes-tutorial/)
+  - [Apache Kafka - GFG](https://www.geeksforgeeks.org/apache-kafka/)
 
 - Explain **HTTP protocol** (again)
 - How the **internet works using a router**  
-  Reference: https://www.geeksforgeeks.org/how-internet-works/
+  Reference: [GFG](https://www.geeksforgeeks.org/computer-networks/how-does-a-router-work/)
 
 ---
 
 ### 🧩 Puzzles
-- Bat + Ball problem  
+
+- Bat + Ball problem
 - Room height using **simple pendulum formula**
 
 ---
 
 ### 🧠 Behavioral
+
 - Learning beyond academics
 - Why **software role from ECE**
 - Time management
@@ -158,9 +168,10 @@ Secure suitcase transfer using **locks and keys**, without sharing keys.
 
 ## 💬 Round 4 – HR / ETR Interview
 
-**Duration:** 15–20 minutes  
+**Duration:** 15–20 minutes
 
 ### 🔍 Discussion
+
 - Full form of **ETR**
 - Roles applied for
 - Competitors of Cisco
@@ -194,17 +205,18 @@ The process tested **technical depth, problem-solving, and communication**, whil
 
 ---
 
-**🗒️ Shared by:** Anonymous  
+**🗒️ Shared by:** Anonymous
 
 ---
 
 ## 🔗 Reference Links
-- https://www.cisco.com/
-- https://www.geeksforgeeks.org/operating-system-introduction/
-- https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/
-- https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system/
-- https://www.geeksforgeeks.org/blogs/http-full-form/
-- https://www.geeksforgeeks.org/rest-api-introduction/
-- https://www.geeksforgeeks.org/cap-theorem-in-distributed-systems/
-- https://www.geeksforgeeks.org/lru-cache-implementation/
-- https://www.geeksforgeeks.org/router-in-computer-network/
+
+- [Cisco](https://www.cisco.com/)
+- [Operating System - GFG](https://www.geeksforgeeks.org/operating-systems/introduction-of-operating-system-set-1/)
+- [DeadLock - GFG](https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/)
+- [Banker’s Algorithm - GFG](https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system/)
+- [HTTP Protocol - GFG](https://www.geeksforgeeks.org/blogs/http-full-form/)
+- [REST API - GFG](https://www.geeksforgeeks.org/node-js/rest-api-introduction/)
+- [Cap Theorem - GFG](https://www.geeksforgeeks.org/system-design/cap-theorem-in-system-design/)
+- [LRU Cache - GFG](https://www.geeksforgeeks.org/lru-cache-implementation/)
+- [Router](https://www.geeksforgeeks.org/computer-networks/how-does-a-router-work/)

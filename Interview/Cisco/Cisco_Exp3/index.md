@@ -4,18 +4,18 @@
 **Role:** Software Engineering Intern (Summer)  
 **Location:** Bangalore  
 **Verdict:** ✅ **SELECTED**  
-**Application Method:** On-Campus Recruitment Drive  
+**Application Method:** On-Campus Recruitment Drive
 
 ---
 
 ## 🗓️ Timeline
 
-- **Application Opens:** ~20th August  
-- **Online Assessment:** 3rd September  
-- **OA Results:** 11th September  
-  - 7 students shortlisted from my campus  
-- **Interview Day (All Rounds):** 19th September  
-- **Final Verdict:** 27th September  
+- **Application Opens:** ~20th August
+- **Online Assessment:** 3rd September
+- **OA Results:** 11th September
+  - 7 students shortlisted from my campus
+- **Interview Day (All Rounds):** 19th September
+- **Final Verdict:** 27th September
 
 ---
 
@@ -24,36 +24,39 @@
 This round was conducted on **HackerRank** for colleges across India on the same day.
 
 ### 🔍 Structure
-- **Total Questions:** 42  
-- **40 MCQs:**  
-  - Object-Oriented Programming (OOPS)  
-  - Computer Networks (CN)  
-  - Operating Systems (OS)  
+
+- **Total Questions:** 42
+- **40 MCQs:**
+  - Object-Oriented Programming (OOPS)
+  - Computer Networks (CN)
+  - Operating Systems (OS)
 
 - **2 Coding Questions:**
-  1. **Trie + BFS based problem**  
+  1. **Trie + BFS based problem**
      - Solved completely  
-     Reference:  
-     - https://leetcode.com/problems/implement-trie-prefix-tree/  
-     - https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+       Reference:
+     - [Implement Trie - Leetcode](https://leetcode.com/problems/implement-trie-prefix-tree/)
+     - [BFS - GFG](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
-  2. **Graph-based problem**  
+  2. **Graph-based problem**
      - Passed some test cases  
-     Reference:  
-     - https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/
+       Reference:
+     - [Graph Algorithms - GFG](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
 
 ---
 
 ### 🕶️ Unbiased Evaluation (Unique Aspect)
 
 Cisco followed a **blind hiring process**:
+
 - Resume submitted in a **masked format**
 - ❌ No college name, CGPA, or branch
 - Interviews conducted on **Cisco Webex**
 - Large virtual event with **200+ students across India**
 
 Reference:
-- https://www.cisco.com/c/en/us/about/careers.html
+
+- [Cisco Careers](https://www.cisco.com/c/en/us/about/careers.html)
 
 ✅ **Outcome:** Cleared OA
 
@@ -61,15 +64,17 @@ Reference:
 
 ## 💻 Round 2 – Technical Interview
 
-**Duration:** 45–50 minutes  
+**Duration:** 45–50 minutes
 
 ### 🔍 Interview Flow
+
 - Brief introduction (no personal details allowed)
 - Deep dive into **resume and projects**
 
 ---
 
 ### 🗂️ Project Discussion
+
 - Internship project: **Arduino-based Solar Tracking System**
 - Other projects:
   - Blog Website
@@ -78,35 +83,40 @@ Reference:
 ---
 
 ### 🌐 Computer Networks (CN)
-- Network topologies  
-- Difference between **Physical vs Logical topology**  
-- **FTP** and difference between **Active & Passive modes**  
-- How **DHCP** works  
+
+- Network topologies
+- Difference between **Physical vs Logical topology**
+- **FTP** and difference between **Active & Passive modes**
+- How **DHCP** works
 
 References:
-- https://www.geeksforgeeks.org/network-topologies/
-- https://www.geeksforgeeks.org/file-transfer-protocol-ftp/
-- https://www.geeksforgeeks.org/dynamic-host-configuration-protocol-dhcp/
+
+- [Network Topologies - GFG](https://www.geeksforgeeks.org/network-topologies/)
+- [FTP - GFG](https://www.geeksforgeeks.org/file-transfer-protocol-ftp/)
+- [DHCP - GFG](https://www.geeksforgeeks.org/dynamic-host-configuration-protocol-dhcp/)
 
 ---
 
 ### ⚙️ Operating Systems (OS)
-- What is a **Real-Time OS**?  
-- **Process vs Thread**  
-- Multithreading  
-- **Starvation**, **Deadlock**, **Critical Section**, **Semaphores**  
+
+- What is a **Real-Time OS**?
+- **Process vs Thread**
+- Multithreading
+- **Starvation**, **Deadlock**, **Critical Section**, **Semaphores**
 
 I explained most concepts using **real-world analogies**, which the interviewer appreciated.
 
 References:
-- https://www.geeksforgeeks.org/real-time-operating-system-rtos/
-- https://www.geeksforgeeks.org/difference-between-process-and-thread/
-- https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/
-- https://www.geeksforgeeks.org/semaphores-in-process-synchronization/
+
+- [RTOS - GFG](https://www.geeksforgeeks.org/real-time-operating-system-rtos/)
+- [Process vs Thread - GFG](https://www.geeksforgeeks.org/difference-between-process-and-thread/)
+- [Deadlock - GFG](https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/)
+- [Semaphores - GFG](https://www.geeksforgeeks.org/semaphores-in-process-synchronization/)
 
 ---
 
 ### 🧩 DSA – Live Coding (Notepad)
+
 - Check if a **number is prime**
 - Implement a **Linked List from scratch**
 - Check if a **Linked List is circular**
@@ -114,11 +124,12 @@ References:
 Later, I ran the code on an online compiler and fixed a small bug.
 
 References:
-- https://www.geeksforgeeks.org/program-to-check-prime-number/
-- https://www.geeksforgeeks.org/linked-list-set-1-introduction/
-- https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/
 
-🧠 *Strategy:* I kept **thinking out loud** and explained my logic while coding.
+- [Prime Check - GFG](https://www.geeksforgeeks.org/dsa/check-for-prime-number/)
+- [Linked List - GFG](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
+- [Detect Loop - GFG](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)
+
+🧠 _Strategy:_ I kept **thinking out loud** and explained my logic while coding.
 
 ✅ **Outcome:** Cleared Round 2  
 (Results announced on Webex after 10–15 minutes)
@@ -127,15 +138,17 @@ References:
 
 ## 🧠 Round 3 – Managerial Interview
 
-**Duration:** 40–50 minutes  
+**Duration:** 40–50 minutes
 
 ### 🔍 Interview Flow
+
 - Conducted by a senior employee with **12+ years at Cisco**
 - Focus on **technical depth + personality**
 
 ---
 
 ### 🏏 Hobby Discussion
+
 - Started with hobbies
 - I mentioned **reading**
 - We discussed a book I had recently read and its impact
@@ -143,31 +156,36 @@ References:
 ---
 
 ### 🗂️ Project Deep Dive
+
 - Focus on **scalability and deployment**
 - Blog Website:
   - Backend discussion
   - Why **MongoDB** was used
 
 Reference:
-- https://www.geeksforgeeks.org/mongodb-an-introduction/
+
+- [MongoDB - GFG](https://www.geeksforgeeks.org/mongodb-an-introduction/)
 
 ---
 
 ### 🌐 Computer Networks (Deep Dive)
+
 - End-to-end explanation of **DNS**
 - Different types of **IP addresses**
 
 References:
-- https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/
-- https://www.geeksforgeeks.org/ip-addressing-introduction/
+
+- [DNS - GFG](https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/)
+- [IP Address](https://www.geeksforgeeks.org/computer-science-fundamentals/what-is-an-ip-address/)
 
 ---
 
 ### 🎯 Position of Responsibility
+
 - Discussed my role as **Vice President – IEI Student Chapter**
 - Leadership, teamwork, and responsibility handling
 
-🧠 *Key takeaway:*  
+🧠 _Key takeaway:_  
 Know **every word on your resume** and be ready to explain it deeply.
 
 ✅ **Outcome:** Cleared Round 3
@@ -176,15 +194,17 @@ Know **every word on your resume** and be ready to explain it deeply.
 
 ## 💬 Round 4 – ETR Connect (HR Round)
 
-**Duration:** ~10 minutes  
+**Duration:** ~10 minutes
 
 ### 🔍 Questions Asked
+
 - Tell me something **not mentioned on your resume**
 - Strengths and weaknesses
 - Teamwork experience and challenges
 - Location preference: **Bangalore / Chennai / Pune**
 
 Ended with a short discussion on:
+
 - Work culture
 - Internship role at Cisco
 
@@ -192,7 +212,7 @@ Ended with a short discussion on:
 
 ## 🏁 Final Verdict
 
-✅ **SELECTED**  
+✅ **SELECTED**
 
 - Result communicated on **27th September**
 - Out of **7 shortlisted candidates**, **3 reached HR**
@@ -203,11 +223,13 @@ Ended with a short discussion on:
 ## 🌟 Overall Experience
 
 The Cisco on-campus process was an **intensive one-day virtual event** covering:
+
 - Technical
 - Managerial
-- HR evaluation  
+- HR evaluation
 
 Success depended on:
+
 - Strong **Computer Networks & OS fundamentals**
 - Deep understanding of **projects**
 - Clear and confident **communication**
@@ -225,16 +247,17 @@ Success depended on:
 
 ---
 
-**🗒️ Shared by:** Anonymous  
+**🗒️ Shared by:** Anonymous
 
 ---
 
 ## 🔗 Reference Links
-- https://www.cisco.com/
-- https://leetcode.com/problems/implement-trie-prefix-tree/
-- https://www.geeksforgeeks.org/network-topologies/
-- https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/
-- https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/
-- https://www.geeksforgeeks.org/semaphores-in-process-synchronization/
-- https://www.geeksforgeeks.org/linked-list-set-1-introduction/
-- https://www.geeksforgeeks.org/mongodb-an-introduction/
+
+- [Cisco](https://www.cisco.com/)
+- [Implement Trie - Leetcode](https://leetcode.com/problems/implement-trie-prefix-tree/)
+- [Network Topologies - GFG](https://www.geeksforgeeks.org/network-topologies/)
+- [Domain Name System - GFG](https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/)
+- [Introduction of Deadlock - GFG](https://www.geeksforgeeks.org/introduction-of-deadlock-in-operating-system/)
+- [Semaphores - GFG](https://www.geeksforgeeks.org/semaphores-in-process-synchronization/)
+- [Linked List - GFG](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
+- [MongoDB - GFG](https://www.geeksforgeeks.org/mongodb-an-introduction/)

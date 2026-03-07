@@ -2,8 +2,8 @@
 
 **Type:** On-Campus Opportunity
 **Role:** Technorise Intern (Summer Internship)  
-**Company:** Tech Mahindra 
-**Application Method:** On-Campus Recruitment Drive  
+**Company:** Tech Mahindra
+**Application Method:** On-Campus Recruitment Drive
 
 ---
 
@@ -13,17 +13,17 @@ The Online Assessment consisted of **3 coding questions**.
 
 ### 🔍 Question-wise Breakdown
 
-1. **Question 1 (Easy)**  
+1. **Question 1 (Easy)**
    - Solved completely in about **15 minutes**
 
-2. **Question 2 (Operating Systems – Banker’s Algorithm)**  
-   - Based on **Banker’s Algorithm** from OS  
+2. **Question 2 (Operating Systems – Banker’s Algorithm)**
+   - Based on **Banker’s Algorithm** from OS
    - Passed **10 out of 15 test cases**
 
-   **Reference:**  
-   - https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system/
+   **Reference:**
+   - [Banker’s Algorithm - GFG](https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system/)
 
-3. **Question 3**  
+3. **Question 3**
    - Could not solve within the given time
 
 Despite not solving all questions fully, I was shortlisted for the next round.
@@ -37,23 +37,28 @@ The technical interview began with a **self-introduction**, followed by a discus
 ### 🔍 Topics Discussed
 
 #### 🗂️ Project Discussion
+
 - Detailed discussion around:
   - Project implementation
   - Concepts used
   - Learnings and challenges
 
 #### 🧩 Programming Question
+
 - Check whether a **year is a leap year or not**
 
-**Reference:**  
-- https://www.geeksforgeeks.org/program-check-given-year-leap-year/
+**Reference:**
+
+- [Check for Leap Year - GFG](https://www.geeksforgeeks.org/program-check-given-year-leap-year/)
 
 #### 🗄️ SQL Question
+
 - Asked to write a **SQL query**
 - The interviewer was **not satisfied with the approach**, and expected a more optimized or correct solution
 
-**Reference:**  
-- https://www.geeksforgeeks.org/sql-tutorial/  
+**Reference:**
+
+- [SQL Tutorial - GFG](https://www.geeksforgeeks.org/sql-tutorial/)
 
 ---
 
@@ -67,6 +72,7 @@ The technical interview began with a **self-introduction**, followed by a discus
 
 The overall interview experience was **good and balanced**.  
 It covered a wide range of areas, including:
+
 - Coding
 - Operating Systems concepts
 - DBMS / SQL
@@ -86,13 +92,13 @@ Even though the final result was not in my favor, the process was a **valuable l
 ---
 
 **🗒️ Final Verdict:** ❌ Rejected  
-**🗒️ Shared by:** Anonymous  
+**🗒️ Shared by:** Anonymous
 
 ---
 
 ## 🔗 Reference Links
 
-- https://www.techmahindra.com/  
-- https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system/  
-- https://www.geeksforgeeks.org/program-check-given-year-leap-year/  
-- https://www.geeksforgeeks.org/sql-tutorial/  
+- [Tech Mahindra Careers](https://www.techmahindra.com/careers)
+- [Banker’s Algorithm - GFG](https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system/)
+- [Check for Leap Year - GFG](https://www.geeksforgeeks.org/program-check-given-year-leap-year/)
+- [SQL Tutorial - GFG](https://www.geeksforgeeks.org/sql-tutorial/)
