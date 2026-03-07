@@ -2,7 +2,7 @@
 
 **Type:** On-Campus Opportunity  
 **Role:** Associate Software Development Engineer (ASDE) Intern  
-**Company:** Publicis Sapient  
+**Company:** Publicis Sapient
 
 ---
 
@@ -18,6 +18,7 @@ The overall process was straightforward, with strong emphasis on **resume projec
 This round focused heavily on my **resume and hands-on project experience**.
 
 ### 🔍 Main Focus
+
 - **Projects mentioned on the resume**
 - Practical understanding rather than theoretical depth
 
@@ -26,6 +27,7 @@ This round focused heavily on my **resume and hands-on project experience**.
 ### 🧩 Key Question Areas
 
 #### ⚙️ Tech Stack Deep Dive
+
 - Interviewer asked about the **technologies used in my projects**
 - Example:
   - I mentioned **React**
@@ -33,18 +35,21 @@ This round focused heavily on my **resume and hands-on project experience**.
 
 🧠 This clearly indicated that the interviewer expected a **solid understanding of the tech stack**, not just surface-level usage.
 
-**Reference:**  
-- https://www.geeksforgeeks.org/reactjs-tutorial/  
-- https://react.dev/reference/react/hooks  
+**Reference:**
+
+- [React - GFG](https://www.geeksforgeeks.org/reactjs/react/)
+- [React Hooks](https://react.dev/reference/react/hooks)
 
 ---
 
 #### 🛠️ Project Rationale
+
 - Questions like:
-  - *Why did you build this project?*
-  - *What problem were you trying to solve?*
+  - _Why did you build this project?_
+  - _What problem were you trying to solve?_
 
 The interviewer wanted to understand:
+
 - Motivation behind the project
 - Problem-solving approach
 - Practical applicability
@@ -52,6 +57,7 @@ The interviewer wanted to understand:
 ---
 
 #### 📂 Codebase Knowledge
+
 - While I was not explicitly asked to explain the **entire codebase**,  
   the detailed tech-stack questions implied that I needed to:
   - Know my implementation well
@@ -60,12 +66,14 @@ The interviewer wanted to understand:
 ---
 
 #### 🧮 DSA (Data Structures & Algorithms)
+
 - One **DSA question** was asked
 - The question was described as **very easy**
 - Focus was more on **basic logic and clarity**
 
-**Reference:**  
-- https://www.geeksforgeeks.org/data-structures/  
+**Reference:**
+
+- [DSA - GFG](https://www.geeksforgeeks.org/data-structures/)
 
 ---
 
@@ -74,6 +82,7 @@ The interviewer wanted to understand:
 This round was **behavioral and values-driven**, rather than technical.
 
 ### 🔍 Main Focus
+
 - Company **vision**
 - **Core values**
 - **Policies and culture fit**
@@ -81,6 +90,7 @@ This round was **behavioral and values-driven**, rather than technical.
 ---
 
 ### 🗣️ Key Question Areas
+
 - **Situation-based questions**
   - Hypothetical scenarios and how I would respond
 - **Strengths and weaknesses**
@@ -96,27 +106,31 @@ Almost **every answer** in this round needed to be framed around
 **Publicis Sapient’s core values and vision**.
 
 🧠 How to handle this round:
+
 - Study the company’s **official core values** beforehand
 - For every:
   - Situation-based question
   - Strength/weakness
   - Club or learning experience  
-  → **Explicitly connect your answer to their values**
+    → **Explicitly connect your answer to their values**
 
 Having **good knowledge of company policies and vision** was essential.
 
-**Reference:**  
-- https://www.publicissapient.com/about/core-values  
+**Reference:**
+
+- [Core Values - Publicis Sapient](https://www.publicissapient.com/about/core-values)
 
 ---
 
 ## 🌟 Overall Experience
 
 The interview process was **smooth and well-structured**:
+
 - A **technical round** focused on resume projects and an easy DSA question
 - An **HR round** centered on situational and value-based questions
 
 Rather than tricky problems, the process emphasized:
+
 - Practical understanding
 - Communication
 - Cultural alignment
@@ -126,7 +140,7 @@ Rather than tricky problems, the process emphasized:
 ## 💡 Advice for Others
 
 - **Know your projects thoroughly:**  
-  Be ready to explain *what you built, why you built it, and how it works*, especially the tech stack (e.g., React, Hooks).
+  Be ready to explain _what you built, why you built it, and how it works_, especially the tech stack (e.g., React, Hooks).
 - **Study company values deeply:**  
   HR rounds are strongly driven by alignment with **core values and vision**.
 - **Frame your answers smartly:**  
@@ -136,14 +150,14 @@ Rather than tricky problems, the process emphasized:
 
 ---
 
-**🗒️ Shared by:** Anonymous  
+**🗒️ Shared by:** Anonymous
 
 ---
 
 ## 🔗 Reference Links
 
-- https://www.publicissapient.com/  
-- https://www.publicissapient.com/about/core-values  
-- https://www.geeksforgeeks.org/reactjs-tutorial/  
-- https://react.dev/reference/react/hooks  
-- https://www.geeksforgeeks.org/data-structures/  
+- [Publicis Sapient](https://www.publicissapient.com/)
+- [Core Values - Publicis Sapient](https://www.publicissapient.com/about/core-values)
+- [React - GFG](https://www.geeksforgeeks.org/reactjs/react/)
+- [React Hooks](https://react.dev/reference/react/hooks)
+- [DSA - GFG](https://www.geeksforgeeks.org/data-structures/)

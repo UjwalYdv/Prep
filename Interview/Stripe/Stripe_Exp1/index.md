@@ -12,11 +12,12 @@
 The first round was an **Online Assessment (OA)** consisting of **1 coding question** with a duration of **60 minutes**.
 
 ### 🔍 Problem Overview
+
 - The entire input was provided in **string format**
 - The actual inputs had to be **extracted using regular expressions**
 - Once parsing was done correctly, the logic was manageable
 
-🧠 *Tip:* This round focused more on **string manipulation and input handling** rather than algorithmic difficulty.  
+🧠 _Tip:_ This round focused more on **string manipulation and input handling** rather than algorithmic difficulty.  
 Reference: [Regular Expressions – GeeksforGeeks](https://www.geeksforgeeks.org/cpp/regex-regular-expression-in-c/)
 
 ✅ **Outcome:** Cleared OA
@@ -26,6 +27,7 @@ Reference: [Regular Expressions – GeeksforGeeks](https://www.geeksforgeeks.org
 ## ⚠️ Programming Language Selection (Important Note)
 
 After clearing the OA, the interviewer clearly mentioned that:
+
 - **C++ can be a disadvantage**, as many required libraries are unavailable
 - **Python, Java, or JavaScript** are preferred languages at Stripe
 
@@ -39,6 +41,7 @@ If you are comfortable with **Python / Java / JavaScript**, prefer those languag
 ## 📘 Interview Format Note
 
 📌 All subsequent rounds were **open-book**:
+
 - Internet access allowed
 - Official documentation allowed
 - ❌ **LLM tools were strictly prohibited** (even Gemini suggestions during Google search 🥲)
@@ -50,6 +53,7 @@ If you are comfortable with **Python / Java / JavaScript**, prefer those languag
 This round involved a **simple coding problem**.
 
 ### 🔍 Focus Areas
+
 - Writing **clean and readable code**
 - Proper **naming conventions**
 - Code that is **easy to understand and modify**
@@ -67,6 +71,7 @@ Reference: [Clean Code Principles – GeeksforGeeks](https://dev.to/favourmark05
 This round was similar to the previous one.
 
 ### 🔍 Focus Areas
+
 - Code structure and clarity
 - Logical correctness
 - Maintainability and readability
@@ -83,11 +88,13 @@ Reference: [Google Coding Style Guide](https://google.github.io/styleguide/)
 This was the **most challenging round**.
 
 ### 🔧 Task Description
+
 - Cloned a **private GitHub repository** provided by Stripe
 - Fixed multiple **issues in the existing codebase**
 - Worked with **API integration**
 
 ### ❌ What Went Wrong
+
 - Limited experience with:
   - API integration
   - HTTP requests
@@ -96,13 +103,16 @@ This was the **most challenging round**.
 Even though documentation was allowed, lack of hands-on experience caused difficulties.
 
 ### 📚 Recommended Preparation
+
 If using C++:
-- `libcurl` for HTTP requests  
-- `ifstream` / `ofstream` for file handling  
-- JSON parsing libraries  
+
+- `libcurl` for HTTP requests
+- `ifstream` / `ofstream` for file handling
+- JSON parsing libraries
 - REST API fundamentals
 
 References:
+
 - [libcurl Documentation](https://curl.se/libcurl/)
 - [REST API Introduction – GeeksforGeeks](https://www.geeksforgeeks.org/rest-api-introduction/)
 - [JSON Parsing in C++ – GeeksforGeeks](https://dev.to/uponthesky/c-making-a-simple-json-parser-from-scratch-250g)
@@ -128,22 +138,23 @@ Although the final result was **disappointing 🥲**, the experience was highly 
 
 ## 💡 Advice for Others
 
-- Prefer **Python / Java / JavaScript** if possible  
+- Prefer **Python / Java / JavaScript** if possible
 - Focus on **clean, readable, maintainable code**
 - Learn **API basics** before the interview
 - Open-book interviews still require **hands-on experience**
 
 ---
 
-**🗒️ Shared by:** Anonymous  
+**🗒️ Shared by:** Anonymous
 
 ---
 
 ## 🔗 Reference Links
-- https://stripe.com/jobs
-- https://www.geeksforgeeks.org/cpp/regex-regular-expression-in-c/
-- https://dev.to/favourmark05/writing-clean-code-best-practices-and-principles-3amh
-- https://google.github.io/styleguide/
-- https://www.geeksforgeeks.org/rest-api-introduction/
-- https://curl.se/libcurl/
-- https://dev.to/uponthesky/c-making-a-simple-json-parser-from-scratch-250g
+
+- [Stripe Careers](https://stripe.com/jobs)
+- [Regex in C++ - GFG](https://www.geeksforgeeks.org/cpp/regex-regular-expression-in-c/)
+- [Clean Code Principles - GFG](https://dev.to/favourmark05/writing-clean-code-best-practices-and-principles-3amh)
+- [Google Coding Style Guide](https://google.github.io/styleguide/)
+- [REST API Introduction - GFG](https://www.geeksforgeeks.org/rest-api-introduction/)
+- [libcurl Documentation](https://curl.se/libcurl/)
+- [JSON Parsing in C++ - GFG](https://dev.to/uponthesky/c-making-a-simple-json-parser-from-scratch-250g)

@@ -3,7 +3,7 @@
 **Type:** On-Campus Opportunity  
 **Role:** Software Development Engineer Intern (Summer)  
 **Company:** Cisco  
-**Verdict:** ⏳ **PENDING**  
+**Verdict:** ⏳ **PENDING**
 
 ---
 
@@ -21,16 +21,17 @@ After the results, we were instructed to prepare a **custom resume** in a very s
 Cisco followed a **strict and unbiased resume screening process**:
 
 - Resume had to follow a **predefined format**
-- ❌ No personal details  
-- ❌ No academic details  
-- ❌ No college name, marks, or CGPA  
-- ❌ No club or extracurricular activities  
+- ❌ No personal details
+- ❌ No academic details
+- ❌ No college name, marks, or CGPA
+- ❌ No club or extracurricular activities
 - ✅ Focus entirely on **projects and technical contributions**
 
 This ensured the evaluation was **purely skill-based**.
 
-**Reference:**  
-- https://www.cisco.com/c/en/us/about/careers.html
+**Reference:**
+
+- [Cisco Careers](https://www.cisco.com/c/en/us/about/careers.html)
 
 ---
 
@@ -39,6 +40,7 @@ This ensured the evaluation was **purely skill-based**.
 This round was **purely technical** and highly interactive.
 
 ### 🔍 What Was Asked
+
 - Multiple **medium-level DSA problems**
   - I had to **solve and execute the code live**
 - Deep discussion on:
@@ -47,15 +49,16 @@ This round was **purely technical** and highly interactive.
 - A few **logical puzzles**
 - Discussion around my **passions and interests**
 
-**DSA Focus References:**  
-- https://www.geeksforgeeks.org/data-structures/  
-- https://leetcode.com/problemset/all/
+**DSA Focus References:**
+
+- [DSA - GFG](https://www.geeksforgeeks.org/data-structures/)
 
 🧠 The interaction felt **natural and dynamic**, not mechanical.
 
 ⏱️ Within **15 minutes**, I received a notification for the **Managerial Round**.
 
-📉 **Elimination Stats:**  
+📉 **Elimination Stats:**
+
 - **3 out of 8 candidates** were rejected in this round
 
 ---
@@ -65,6 +68,7 @@ This round was **purely technical** and highly interactive.
 This round focused on **situational and behavioral evaluation**.
 
 ### 🔍 Interview Focus
+
 - Real-life challenging scenarios
 - Evaluation of:
   - Mental strength
@@ -74,14 +78,17 @@ This round focused on **situational and behavioral evaluation**.
 I answered confidently while **staying true to myself**.
 
 💬 The discussion slowly turned into a **long and friendly conversation**, covering:
+
 - Personal philosophies
 - Thought processes
 - Approach towards work and life
 
-**Behavioral Interview Reference:**  
-- https://www.themuse.com/advice/star-interview-method
+**Behavioral Interview Reference:**
 
-📉 **Elimination Stats:**  
+- [Star Method](https://www.themuse.com/advice/star-interview-method)
+
+📉 **Elimination Stats:**
+
 - **2 out of 5 candidates** were rejected in this round
 
 ---
@@ -91,6 +98,7 @@ I answered confidently while **staying true to myself**.
 After about **two hours**, I was called for the **ETR round**.
 
 ### 🔍 Discussion Included
+
 - Overview of **Cisco as a company**
 - Explanation of:
   - Internship role
@@ -100,8 +108,9 @@ After about **two hours**, I was called for the **ETR round**.
 
 🧠 The round ended on a **very positive and calm note**, concluding the interview process smoothly.
 
-**Reference:**  
-- https://www.cisco.com/
+**Reference:**
+
+- [Cisco](https://www.cisco.com/)
 
 ---
 
@@ -109,9 +118,9 @@ After about **two hours**, I was called for the **ETR round**.
 
 Overall, it was a **refreshing and memorable experience**, not just because of the interview outcome, but because of:
 
-- Warm interviewers  
-- Insightful discussions  
-- Genuine and engaging conversations  
+- Warm interviewers
+- Insightful discussions
+- Genuine and engaging conversations
 
 ---
 
@@ -125,14 +134,13 @@ Overall, it was a **refreshing and memorable experience**, not just because of t
 
 **🗒️ Overall Experience:** Refreshing  
 **🗒️ Verdict:** ⏳ Pending  
-**🗒️ Shared by:** Tahmid Choudhury  
+**🗒️ Shared by:** Tahmid Choudhury
 
 ---
 
 ## 🔗 Reference Links
 
-- https://www.cisco.com/  
-- https://www.cisco.com/c/en/us/about/careers.html  
-- https://www.geeksforgeeks.org/data-structures/  
-- https://leetcode.com/problemset/all/  
-- https://www.themuse.com/advice/star-interview-method  
+- [Cisco](https://www.cisco.com/)
+- [Cisco Careers](https://www.cisco.com/c/en/us/about/careers.html)
+- [DSA - GFG](https://www.geeksforgeeks.org/data-structures/)
+- [Star Method](https://www.themuse.com/advice/star-interview-method)

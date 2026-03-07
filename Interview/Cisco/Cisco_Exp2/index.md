@@ -9,15 +9,17 @@
 
 ## 🧪 Round 1 – Technical Interview
 
-**Duration:** ~45 minutes  
+**Duration:** ~45 minutes
 
 ### 🔍 Interview Flow
+
 - Started with a **brief introduction**
 - Interviewer asked me to explain my **internship project**
 - I explained the project in detail using the **STAR method** (Situation, Task, Action, Result)
 
 Reference:
-- https://www.themuse.com/advice/star-interview-method
+
+- [Star Method](https://www.themuse.com/advice/star-interview-method)
 
 ---
 
@@ -33,14 +35,15 @@ Group strings that are anagrams of each other.
 🧠 Focus was on **clarity, correctness, and explanation**, not just the final code.
 
 Reference:
-- https://leetcode.com/problems/group-anagrams/
-- https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/
+
+- [Group Anagrams - Leetcode](https://leetcode.com/problems/group-anagrams/)
 
 ---
 
 ### 🌐 Networking & Project Discussion
+
 - What is **DNS**?  
-  Reference: https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/
+  Reference: [DNS - GFG](https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/)
 - Interviewer opened my **deployed project** (screen shared)
 - Asked about **login edge cases**
   - I explained that a user can register using an email **only once**
@@ -49,13 +52,15 @@ Reference:
 ---
 
 ### ⚙️ DevOps Touch
+
 - Interviewer was from a **DevOps background**
 - Asked if I knew anything about **Docker**
 - I explained a **basic understanding**
 - He appreciated the clarity despite it being basic
 
 Reference:
-- https://www.geeksforgeeks.org/docker-tutorial/
+
+- [Docker - GFG](https://www.geeksforgeeks.org/docker-tutorial/)
 
 🕒 This round lasted around **40–45 minutes**
 
@@ -65,15 +70,17 @@ Reference:
 
 ## 🧠 Round 2 – Managerial Round
 
-**Duration:** ~30 minutes  
+**Duration:** ~30 minutes
 
 ### 🔍 Interview Flow
+
 - Interviewer had ~15 years of experience
 - Started directly with **behavioral questions**
 
 ---
 
 ### 🗣️ Behavioral Discussion
+
 - Strengths and weaknesses
 - Who is your **inspiration**?
   - I answered **MS Dhoni**
@@ -81,6 +88,7 @@ Reference:
 - We discussed cricket for ~10 minutes
 
 🧠 Discussion revolved around:
+
 - Staying calm under pressure
 - Leadership
 - Learning from failures
@@ -90,11 +98,9 @@ I explained how I applied **MS Dhoni’s calm mindset** during a conflict in my 
 ---
 
 ### 🏏 Informal Connect
+
 - Interviewer admired **Michael Bevan**
 - Since I had watched his innings on YouTube, we discussed that as well
-
-Reference:
-- https://www.espncricinfo.com/player/ms-dhoni-28081
 
 ✅ **Outcome:** Cleared Round 2
 
@@ -102,9 +108,10 @@ Reference:
 
 ## 🧠 Round 3 – Executive Round
 
-**Duration:** ~45 minutes  
+**Duration:** ~45 minutes
 
 ### 🔍 Interview Flow
+
 - Interviewer had ~17 years of experience
 - Very calm and friendly personality
 - This round involved a **deep dive into my internship project**
@@ -112,6 +119,7 @@ Reference:
 ---
 
 ### 🗂️ Project Deep Dive
+
 - Discussed both **technical and non-technical aspects**
 - My project was related to **Computer Networks**, which helped a lot
 - Asked about:
@@ -122,10 +130,11 @@ Reference:
 ---
 
 ### 🌐 Networking Focus
+
 - What **Cisco products** do you see around you?
 - Difference between **Switches and Routers**  
   Reference:
-  - https://www.geeksforgeeks.org/difference-between-hub-switch-and-router/
+  - [Hub Switch & Router - GFG](https://www.geeksforgeeks.org/difference-between-hub-switch-and-router/)
 - Asked if I read any **networking books**
   - I said no, but shared a **YouTube channel** that explains concepts with animations
   - Gave an example of a topic I learned from it
@@ -133,13 +142,15 @@ Reference:
 ---
 
 ### 🏏 Personal Insight
-- Asked: *Tell me one thing not mentioned in your resume*
+
+- Asked: _Tell me one thing not mentioned in your resume_
 - I mentioned **cricket**
 - Explained how being part of the **college cricket club** shaped my discipline and teamwork
 - Shared why I admire **Test Cricket**
 
 Reference:
-- https://www.geeksforgeeks.org/computer-network-tutorials/
+
+- [Computer Network - GFG](https://www.geeksforgeeks.org/computer-network-tutorials/)
 
 ✅ **Outcome:** Cleared Round 3
 
@@ -147,16 +158,17 @@ Reference:
 
 ## 💬 Round 4 – HR / ETR Round
 
-**Duration:** ~5 minutes  
+**Duration:** ~5 minutes
 
 ### 🔍 Discussion
+
 - Yes / No type questions:
   - Does your college allow **6-month internship**?
   - Are you ready to **relocate**?
   - Are you comfortable with the role and location?
 - This round was mostly a **formality**
 
-🧠 *Fun fact:*  
+🧠 _Fun fact:_  
 I waited **6 hours** for this round with a severe fever, and it ended in **under 6 minutes** 😅
 
 ---
@@ -183,15 +195,16 @@ The interviews focused heavily on **Computer Networks**, **project understanding
 
 ---
 
-**🗒️ Shared by:** Anonymous  
+**🗒️ Shared by:** Anonymous
 
 ---
 
 ## 🔗 Reference Links
-- https://www.cisco.com/
-- https://leetcode.com/problems/group-anagrams/
-- https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/
-- https://www.geeksforgeeks.org/docker-tutorial/
-- https://www.geeksforgeeks.org/difference-between-hub-switch-and-router/
-- https://www.geeksforgeeks.org/computer-network-tutorials/
-- https://www.themuse.com/advice/star-interview-method
+
+- [Cisco](https://www.cisco.com/)
+- [Group Anagrams - Leetcode](https://leetcode.com/problems/group-anagrams/)
+- [DNS - GFG](https://www.geeksforgeeks.org/domain-name-system-dns-in-application-layer/)
+- [Docker - GFG](https://www.geeksforgeeks.org/docker-tutorial/)
+- [Hub Switch & Router - GFG](https://www.geeksforgeeks.org/difference-between-hub-switch-and-router/)
+- [Computer Network - GFG](https://www.geeksforgeeks.org/computer-network-tutorials/)
+- [Star Method](https://www.themuse.com/advice/star-interview-method)

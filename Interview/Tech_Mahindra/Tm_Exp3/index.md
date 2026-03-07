@@ -2,7 +2,7 @@
 
 **Type:** On-Campus Opportunity  
 **Role:** Technorise Intern (Summer Internship)  
-**Company:** Tech Mahindra  
+**Company:** Tech Mahindra
 
 ---
 
@@ -18,6 +18,7 @@ Overall, the process was structured and evaluated candidates from multiple angle
 This was the **first elimination round**, focused on **DSA-based coding problems**.
 
 ### 🔍 Round Details
+
 - A few **DSA-based coding questions**
 - Difficulty level ranged from **easy to medium**
 - Focus areas:
@@ -25,9 +26,10 @@ This was the **first elimination round**, focused on **DSA-based coding problems
   - Correct implementation
   - Basic problem-solving
 
-**References:**  
-- https://www.geeksforgeeks.org/data-structures/  
-- https://leetcode.com/problemset/all/
+**References:**
+
+- [DSA - GFG](https://www.geeksforgeeks.org/data-structures/)
+- [Leetcode](https://leetcode.com/problemset/all/)
 
 ---
 
@@ -36,14 +38,16 @@ This was the **first elimination round**, focused on **DSA-based coding problems
 The second round was an **MCQ-based aptitude assessment**.
 
 ### 🔍 Topics Covered
-- Quantitative aptitude  
-- Logical reasoning  
-- Analytical thinking  
+
+- Quantitative aptitude
+- Logical reasoning
+- Analytical thinking
 
 This round tested **speed and accuracy**.
 
-**Reference:**  
-- https://www.indiabix.com/aptitude/questions-and-answers/
+**Reference:**
+
+- [Aptitude - IndiaBix](https://www.indiabix.com/aptitude/questions-and-answers/)
 
 ---
 
@@ -52,14 +56,16 @@ This round tested **speed and accuracy**.
 This round evaluated **English communication skills**.
 
 ### 🔍 Evaluation Areas
-- Reading comprehension  
-- Speaking skills  
-- Listening skills  
+
+- Reading comprehension
+- Speaking skills
+- Listening skills
 
 The goal was to assess **clarity and confidence in communication**.
 
-**Reference:**  
-- https://www.indiabix.com/verbal-ability/questions-and-answers/
+**Reference:**
+
+- [Verbal - IndiaBix](https://www.indiabix.com/verbal-ability/questions-and-answers/)
 
 ---
 
@@ -68,20 +74,22 @@ The goal was to assess **clarity and confidence in communication**.
 This round varied slightly for different candidates.
 
 ### 🔍 Interview Focus
+
 - **Core CS fundamentals** (OS, DBMS, basic CN)
 - Detailed discussion on **projects mentioned in my resume**
 - Some **behavioral questions**
 - Questions related to the **tech stack used**, such as:
-  - React.js  
-  - JavaScript  
+  - React.js
+  - JavaScript
 
 The interviewer expected a **solid understanding of technologies** and clear explanations of project decisions.
 
-**References:**  
-- https://www.geeksforgeeks.org/operating-systems/  
-- https://www.geeksforgeeks.org/dbms/  
-- https://www.geeksforgeeks.org/reactjs/react/  
-- https://www.geeksforgeeks.org/javascript-tutorial/
+**References:**
+
+- [Operating Systems - GFG](https://www.geeksforgeeks.org/operating-systems/)
+- [DBMS - GFG](https://www.geeksforgeeks.org/dbms/)
+- [React - GFG](https://www.geeksforgeeks.org/reactjs/react/)
+- [JavaScript - GFG](https://www.geeksforgeeks.org/javascript-tutorial/)
 
 ---
 
@@ -90,6 +98,7 @@ The interviewer expected a **solid understanding of technologies** and clear exp
 This was the **final round**, primarily behavioral.
 
 ### 🔍 Discussion Topics
+
 - Why I wanted to **join Tech Mahindra**
 - Career **goals and aspirations**
 - Discussion on **projects and learnings**
@@ -97,8 +106,9 @@ This was the **final round**, primarily behavioral.
 
 The round was calm, friendly, and conversational.
 
-**Reference:**  
-- https://www.geeksforgeeks.org/hr/hr-interview-questions/
+**Reference:**
+
+- [HR Questions - GFG](https://www.geeksforgeeks.org/hr/hr-interview-questions/)
 
 ---
 
@@ -108,6 +118,7 @@ Overall, the experience was **positive and a bit lengthy** due to multiple round
 However, the questions were mostly of **easy to medium difficulty**, making the process manageable.
 
 The interviews emphasized:
+
 - Strong **CS fundamentals**
 - Clear understanding of **tech stack**
 - **Resume ownership**
@@ -131,19 +142,19 @@ The interviews emphasized:
 
 ---
 
-**🗒️ Shared by:** Debisma Priya Borah  
+**🗒️ Shared by:** Debisma Priya Borah
 
 ---
 
 ## 🔗 Reference Links
 
-- https://www.techmahindra.com/  
-- https://www.geeksforgeeks.org/data-structures/  
-- https://leetcode.com/problemset/all/  
-- https://www.indiabix.com/aptitude/questions-and-answers/  
-- https://www.indiabix.com/verbal-ability/questions-and-answers/  
-- https://www.geeksforgeeks.org/operating-systems/  
-- https://www.geeksforgeeks.org/dbms/  
-- https://www.geeksforgeeks.org/reactjs/react/  
-- https://www.geeksforgeeks.org/javascript-tutorial/  
-- https://www.geeksforgeeks.org/hr/hr-interview-questions/  
+- [Tech Mahindra](https://www.techmahindra.com/)
+- [DSA - GFG](https://www.geeksforgeeks.org/data-structures/)
+- [Leetcode](https://leetcode.com/problemset/all/)
+- [Aptitute - IndiaBix](https://www.indiabix.com/aptitude/questions-and-answers/)
+- [Verbal - IndiaBix](https://www.indiabix.com/verbal-ability/questions-and-answers/)
+- [Operating Systems - GFG](https://www.geeksforgeeks.org/operating-systems/)
+- [DBMS - GFG](https://www.geeksforgeeks.org/dbms/)
+- [React - GFG](https://www.geeksforgeeks.org/reactjs/react/)
+- [JavaScript - GFG](https://www.geeksforgeeks.org/javascript-tutorial/)
+- [HR Questions - GFG](https://www.geeksforgeeks.org/hr/hr-interview-questions/)

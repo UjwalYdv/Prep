@@ -2,8 +2,8 @@
 
 **Type:** On-Campus Opportunity  
 **Role:** Technorise Intern (Summer Internship)  
-**Company:** Tech Mahindra    
-**Application Method:** On-Campus Recruitment Drive  
+**Company:** Tech Mahindra  
+**Application Method:** On-Campus Recruitment Drive
 
 ---
 
@@ -19,16 +19,19 @@ The process consisted of **multiple rounds**, evaluating **coding skills, aptitu
 This was the **first elimination round**.
 
 ### 🔍 Round Details
+
 - **3 coding questions**
 - I solved **2 out of 3 questions**
 
 The questions tested:
+
 - Basic to intermediate **problem-solving**
 - Logical thinking and implementation
 
-**References:**  
-- https://www.geeksforgeeks.org/practice-for-cracking-any-coding-interview/  
-- https://leetcode.com/problemset/all/
+**References:**
+
+- [GFG](https://www.geeksforgeeks.org/practice-for-cracking-any-coding-interview/)
+- [Leetcode](https://leetcode.com/problemset/all/)
 
 ✅ **Outcome:** Cleared Round 1
 
@@ -39,14 +42,16 @@ The questions tested:
 This round focused on **aptitude and reasoning skills**.
 
 ### 🔍 Topics Covered
-- Quantitative aptitude  
-- Logical reasoning  
-- Analytical thinking  
+
+- Quantitative aptitude
+- Logical reasoning
+- Analytical thinking
 
 Speed and accuracy were the key factors.
 
-**Reference:**  
-- https://www.indiabix.com/aptitude/questions-and-answers/
+**Reference:**
+
+- [IndiaBix](https://www.indiabix.com/aptitude/questions-and-answers/)
 
 ✅ **Outcome:** Cleared Round 2
 
@@ -57,12 +62,14 @@ Speed and accuracy were the key factors.
 This round tested **English language proficiency**.
 
 ### 🔍 Evaluation Areas
+
 - Grammar
 - Reading comprehension
 - Professional communication
 
-**Reference:**  
-- https://www.indiabix.com/verbal-ability/questions-and-answers/
+**Reference:**
+
+- [IndianBix](https://www.indiabix.com/verbal-ability/questions-and-answers/)
 
 ✅ **Outcome:** Cleared Round 3
 
@@ -73,6 +80,7 @@ This round tested **English language proficiency**.
 This round mainly revolved around **projects and fundamentals**.
 
 ### 🔍 Interview Focus
+
 - In-depth discussion on my **projects**
   - Problem statement
   - Implementation approach
@@ -82,8 +90,9 @@ This round mainly revolved around **projects and fundamentals**.
 
 The interviewer emphasized **understanding over complexity**.
 
-**Reference:**  
-- https://www.geeksforgeeks.org/string-data-structure/
+**Reference:**
+
+- [String - GFG](https://www.geeksforgeeks.org/string-data-structure/)
 
 ✅ **Outcome:** Cleared Round 4
 
@@ -94,14 +103,16 @@ The interviewer emphasized **understanding over complexity**.
 This was the **final round**.
 
 ### 🔍 Discussion Topics
+
 - **Location preference**
 - Updated **CGPA**
 - Availability and joining formalities
 
 The discussion was brief and straightforward.
 
-**Reference:**  
-- https://www.indeed.com/career-advice/interviewing/hr-interview-questions
+**Reference:**
+
+- [Indeed](https://www.indeed.com/career-advice/interviewing/hr-interview-questions)
 
 ---
 
@@ -127,16 +138,16 @@ The interview process tested **basics, consistency, and communication**, rather 
 
 ---
 
-**🗒️ Shared by:** Anonymous  
+**🗒️ Shared by:** Anonymous
 
 ---
 
 ## 🔗 Reference Links
 
-- https://www.techmahindra.com/  
-- https://www.geeksforgeeks.org/practice-for-cracking-any-coding-interview/  
-- https://leetcode.com/problemset/all/  
-- https://www.indiabix.com/aptitude/questions-and-answers/  
-- https://www.indiabix.com/verbal-ability/questions-and-answers/  
-- https://www.geeksforgeeks.org/string-data-structure/  
-- https://www.indeed.com/career-advice/interviewing/hr-interview-questions  
+- [Tech Mahindra](https://www.techmahindra.com/)
+- [Practice for Cracking Any Coding Interview - GFG](https://www.geeksforgeeks.org/practice-for-cracking-any-coding-interview/)
+- [Leetcode](https://leetcode.com/problemset/all/)
+- [Aptitute - IndiaBix](https://www.indiabix.com/aptitude/questions-and-answers/)
+- [Verbal - IndiaBix](https://www.indiabix.com/verbal-ability/questions-and-answers/)
+- [String - GFG](https://www.geeksforgeeks.org/string-data-structure/)
+- [HR Interview Questions - Indeed](https://www.indeed.com/career-advice/interviewing/hr-interview-questions)
